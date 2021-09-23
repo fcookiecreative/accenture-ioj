@@ -61,10 +61,13 @@
   bottom: -2px;
   font-size: 14px;
   line-height: 16px;
-  font-weight: bold;
-  font-family: 'Graphik Bold', 'Arial Black', sans-serif;
+  font-family: 'Graphik Regular', 'Arial Black', sans-serif;
   color: #fff;
   border-bottom: 2px solid transparent;
+}
+
+.ioj-nav > ul > li.active > a {
+  font-family: 'Graphik Bold', 'Arial Black', sans-serif;
 }
 
 .ioj-nav > ul > li:hover > a,
