@@ -90,9 +90,9 @@
     background: linear-gradient(90.14deg, #9500BD 0.11%, #FB8C5B 99.87%);
   }
   
-  .ioj-carousel-content-mobile .ioj-journey-slide-part {
+  /*.ioj-carousel-content-mobile .ioj-journey-slide-part {
     box-shadow: 0 2px 2px 2px rgb(0 0 0 / 20%);
-  }
+  }*/
 
 
   .ioj-carousel-content-mobile .ioj-operations-subtitle {
