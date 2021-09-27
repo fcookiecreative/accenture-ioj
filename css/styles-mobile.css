@@ -109,7 +109,7 @@
     line-height: 17px;
     font-family: 'Graphik SemiBold', 'Arial', sans-serif;
     display: inline-block;
-    padding-bottom: 101px;
+    /*padding-bottom: 101px;*/
   }
 
   .ioj-carousel-content-mobile .more::after {
