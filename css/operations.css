@@ -1,0 +1,162 @@
+/* Operations*/
+h1{
+    font-family: 'Graphik Regular', 'Arial Black', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 50px;
+    color: #FFFFFF;
+  }
+  
+  .ioj-stable-operations{
+    background: linear-gradient(90deg, #464B52 0%, #898C8D 100%);
+    z-index: 2;
+    position: relative;
+  }
+  .ioj-efficient-operations{
+    background: linear-gradient(90.14deg, #898C8D 0.11%, #00BAFF 99.87%);
+    z-index: 2;
+    position: relative;
+  }
+  .ioj-predictive-operations{
+    background: linear-gradient(270.28deg, #9500BD 0.18%, #00BAFF 99.7%);
+    z-index: 2;
+    position: relative;
+  }
+  .ioj-future-operations{
+    background: linear-gradient(90.14deg, #9500BD 0.11%, #FB8C5B 99.87%);
+    z-index: 2;
+    position: relative;
+  }
+  
+  .ioj-operations-main-image{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+  }
+  
+  .ioj-operations-title{
+    padding: 10px 0 0 30px;
+  }
+  
+  .ioj-operations-title h1{
+    margin: 0;
+  }
+  
+  .ioj-operations-subtitle{
+    padding: 0 0 0 30px;
+    font-family: 'Graphik Regular', 'Arial Black', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-right: 28%;
+  }
+  
+  .ioj-operations-outcomes{
+    padding: 15px 0 0 30px;
+    font-family: 'Graphik Regular', 'Arial Black', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+  
+  .ioj-operation-images{
+    margin: 55px 0 0 30px;
+    height: 60px;
+    width: 60px;
+    
+  }
+  .ioj-operation-images  img{
+    border-radius: 50%;
+    background: #FFFFFF;
+    margin-right: 60px;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+  }
+  .image-column {
+    float: left;
+    width: 70px;
+    margin-right: 60px;
+    padding: 5px;
+  }
+  
+  .ioj-operation-image-text{
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 17px;  
+    font-weight: 500;
+    text-align: center;
+    padding-top: 7px;
+  }
+  
+  .ioj-operation-image-details ul{
+    margin:0;
+  }
+  
+  .ioj-operation-image-details, .ioj-operation-image-details li{
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 17px;  
+    font-weight: 500;
+    text-align: left;
+    padding-left: 0px;
+  }
+  
+ 
+  
+  .ioj-operation-image-details{
+  
+    width: 300px;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 100px;
+  }
+  
+  
+  .ioj-operation-image-details{
+    display: none;
+  }
+  
+  .show .ioj-operation-image-details {
+  display: block;
+  }
+  
+  .image-row{
+    width: 480px;
+    height: 60px;
+    position: relative;
+    z-index: 2;
+  }
+  .image-row::after {
+    
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .show img{
+    display: none;
+  }
+  
+  .image-on{
+    display: none;
+  }
+  
+  .show img.image-on{
+    display: block;
+  }
+  
+  .image-column.show img{
+    padding: 0;
+  }
+  
+  .image-column img{
+    cursor: pointer;
+  }
