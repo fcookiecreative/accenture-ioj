@@ -28,6 +28,7 @@ h1{
     animation: gradient 8s ease infinite;
     z-index: 2;
     position: relative;
+    overflow: hidden;
   }
   .ioj-future-operations{
     background: linear-gradient(90deg, #9500BD, #B72E9E, #D95D7D, #FB8C5B);
@@ -168,3 +169,70 @@ h1{
   .image-column img{
     cursor: pointer;
   }
+
+.ioj-operations-scene-image {
+  position: absolute;
+  bottom: -250px;
+  z-index: 2;
+}
+
+.ioj-operations-scene-image:nth-child(1) {
+  width: 85px;
+  left: 80px;
+  animation: scene1 2s cubic-bezier(0, 0, 0.2, 1) 0s 1 normal forwards;
+}
+
+.ioj-operations-scene-image:nth-child(2) {
+  width: 240px;
+  left: 295px;
+  animation: scene2 2s cubic-bezier(0, 0, 0.2, 1) 2s 1 normal forwards;
+}
+
+.ioj-operations-scene-image:nth-child(3) {
+  width: 275px;
+  left: 570px;
+  z-index: 3;
+  animation: scene3 2s cubic-bezier(0, 0, 0.2, 1) 4s 1 normal forwards;
+}
+
+.ioj-operations-scene-image:nth-child(4) {
+  width: 210px;
+  lefT: 777px;
+  animation: scene4 2s cubic-bezier(0, 0, 0.2, 1) 6s 1 normal forwards;
+}
+
+@keyframes scene1 {
+  0% {
+    bottom: -500px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+
+@keyframes scene2 {
+  0% {
+    bottom: -500px;
+  }
+  100% {
+    bottom: 25px;
+  }
+}
+
+@keyframes scene3 {
+  0% {
+    bottom: -500px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+
+@keyframes scene4 {
+  0% {
+    bottom: -500px;
+  }
+  100% {
+    bottom: 200px;
+  }
+}
