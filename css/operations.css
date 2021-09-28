@@ -9,22 +9,30 @@ h1{
   }
   
   .ioj-stable-operations{
-    background: linear-gradient(90deg, #464B52 0%, #898C8D 100%);
+    background: linear-gradient(90deg, #464B52, #5D6166, #73777A, #898C8D);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
     z-index: 2;
     position: relative;
   }
   .ioj-efficient-operations{
-    background: linear-gradient(90.14deg, #898C8D 0.11%, #00BAFF 99.87%);
+    background: linear-gradient(-90deg, #898C8D, #5C9CB4, #2EABDA, #00BAFF);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
     z-index: 2;
     position: relative;
   }
   .ioj-predictive-operations{
-    background: linear-gradient(270.28deg, #9500BD 0.18%, #00BAFF 99.7%);
+    background: linear-gradient(270deg, #00BAFF, #337BE9, #653DD3, #9500BD);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
     z-index: 2;
     position: relative;
   }
   .ioj-future-operations{
-    background: linear-gradient(90.14deg, #9500BD 0.11%, #FB8C5B 99.87%);
+    background: linear-gradient(90deg, #9500BD, #B72E9E, #D95D7D, #FB8C5B);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
     z-index: 2;
     position: relative;
   }
