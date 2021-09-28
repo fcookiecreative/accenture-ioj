@@ -7,11 +7,13 @@ const stableBackLink = stableBlockMobile.getElementsByClassName("back")[0];
 stableMoreLink.addEventListener("click", event => {
     stableBackBlock.style.display = "block";
     stableMoreBlock.style.display = "none";
+    stableBlockMobile.classList.add("ioj-mobile-modal")
 });
 
 stableBackLink.addEventListener("click", event => {
     stableMoreBlock.style.display = "block";
     stableBackBlock.style.display = "none";
+    stableBlockMobile.classList.remove("ioj-mobile-modal")
 });
 
 
@@ -23,11 +25,13 @@ const efficientBackLink = efficientBlockMobile.getElementsByClassName("back")[0]
 efficientMoreLink.addEventListener("click", event => {
     efficientBackBlock.style.display = "block";
     efficientMoreBlock.style.display = "none";
+    efficientBlockMobile.classList.add("ioj-mobile-modal")
 });
 
 efficientBackLink.addEventListener("click", event => {
     efficientMoreBlock.style.display = "block";
     efficientBackBlock.style.display = "none";
+    efficientBlockMobile.classList.remove("ioj-mobile-modal")
 });
 
 
@@ -39,11 +43,13 @@ const predictiveBackLink = predictiveBlockMobile.getElementsByClassName("back")[
 predictiveMoreLink.addEventListener("click", event => {
     predictiveBackBlock.style.display = "block";
     predictiveMoreBlock.style.display = "none";
+    predictiveBlockMobile.classList.add("ioj-mobile-modal")
 });
 
 predictiveBackLink.addEventListener("click", event => {
     predictiveMoreBlock.style.display = "block";
     predictiveBackBlock.style.display = "none";
+    predictiveBlockMobile.classList.remove("ioj-mobile-modal")
 });
 
 const futureBlockMobile = document.getElementsByClassName("ioj-future-operations-mobile")[0];
@@ -54,9 +60,11 @@ const futureBackLink = futureBlockMobile.getElementsByClassName("back")[0];
 futureMoreLink.addEventListener("click", event => {
     futureBackBlock.style.display = "block";
     futureMoreBlock.style.display = "none";
+    futureBlockMobile.classList.add("ioj-mobile-modal")
 });
 
 futureBackLink.addEventListener("click", event => {
     futureMoreBlock.style.display = "block";
     futureBackBlock.style.display = "none";
+    futureBlockMobile.classList.remove("ioj-mobile-modal")
 });

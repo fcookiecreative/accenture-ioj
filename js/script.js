@@ -30,6 +30,10 @@ const tooltip9 = $('.tooltip-thumb-future .tooltip-icon');
 const tooltip10 = $('.tooltip-person .tooltip-icon');
 const tooltip11 = $('.tooltip-star .tooltip-icon');
 
+const futureHover1 = $('.future-hover1');
+const futureHover2 = $('.future-hover2');
+const futureHover3 = $('.future-hover3');
+const futureHover4 = $('.future-hover4');
 const futureBubble1 = $('.future-bubble1');
 const futureBubble1Off = $('.future-bubble1-off');
 
@@ -49,6 +53,143 @@ const centerTextAlt = document.querySelectorAll('.center-show');
 const len = centerText !== null ? centerText.length : 0;
 
 box1.addEventListener('mouseenter', () => {
+    stableOn();
+});
+
+box1.addEventListener('mouseleave', () => {
+    stableReset();
+});
+
+tooltip1.on('mouseenter', () => {
+    stableOn();
+});
+tooltip2.on('mouseenter', () => {
+    stableOn();
+});
+
+tooltip1.on('mouseleave', () => {
+    stableReset();
+});
+tooltip2.on('mouseleave', () => {
+    stableReset();
+});
+
+box2.addEventListener('mouseenter', () => {
+    predictiveOn();
+});
+
+box2.addEventListener('mouseleave', () => {
+    predictiveReset();
+});
+tooltip6.on('mouseenter', () => {
+    predictiveOn();
+});
+tooltip7.on('mouseenter', () => {
+    predictiveOn();
+});
+tooltip8.on('mouseenter', () => {
+    predictiveOn();
+});
+
+tooltip6.on('mouseleave', () => {
+    predictiveReset();
+});
+tooltip7.on('mouseleave', () => {
+    predictiveReset();
+});
+tooltip8.on('mouseleave', () => {
+    predictiveReset();
+});
+
+box3Container.addEventListener('mouseenter', () => {
+    efficientOn();
+});
+
+box3Container.addEventListener('mouseleave', () => {
+    efficientReset();
+});
+
+tooltip3.on('mouseenter', () => {
+    efficientOn();
+});
+tooltip4.on('mouseenter', () => {
+    efficientOn();
+});
+tooltip5.on('mouseenter', () => {
+    efficientOn();
+});
+
+tooltip3.on('mouseleave', () => {
+    efficientReset();
+});
+tooltip4.on('mouseleave', () => {
+    efficientReset();
+});
+tooltip5.on('mouseleave', () => {
+    efficientReset();
+});
+
+box4Container.addEventListener('mouseenter', () => {
+    futureOn();
+});
+
+box4Container.addEventListener('mouseleave', () => {
+    futureReset();
+});
+
+tooltip9.on('mouseenter', () => {
+    futureOn();
+});
+tooltip10.on('mouseenter', () => {
+    futureOn();
+});
+tooltip11.on('mouseenter', () => {
+    futureOn();
+});
+
+futureHover1.on('mouseenter', () => {
+    futureOn();
+});
+futureHover2.on('mouseenter', () => {
+    futureOn();
+});
+futureHover3.on('mouseenter', () => {
+    futureOn();
+});
+futureHover4.on('mouseenter', () => {
+    futureOn();
+});
+futureBubble1.on('mouseenter', () => {
+    futureOn();
+});
+
+tooltip9.on('mouseleave', () => {
+    futureReset();
+});
+tooltip10.on('mouseleave', () => {
+    futureReset();
+});
+tooltip11.on('mouseleave', () => {
+    futureReset();
+});
+
+futureHover1.on('mouseleave', () => {
+    futureReset();
+});
+futureHover2.on('mouseleave', () => {
+    futureReset();
+});
+futureHover3.on('mouseleave', () => {
+    futureReset();
+});
+futureHover4.on('mouseleave', () => {
+    futureReset();
+});
+futureBubble1.on('mouseleave', () => {
+    futureReset();
+});
+
+function stableOn(){
     box2.classList.add('hovered');
     box3Container.classList.add('hovered');
     box4Container.classList.add('hovered');
@@ -65,17 +206,43 @@ box1.addEventListener('mouseenter', () => {
 
     futureBubble1.hide();
     futureBubble1Off.show();
-});
+}
 
-box1.addEventListener('mouseleave', () => {
+function stableReset(){
     box2.classList.remove('hovered')
     box3Container.classList.remove('hovered')
     box4Container.classList.remove('hovered')
 
     resetIcons();
-});
+}
 
-box2.addEventListener('mouseenter', () => {
+function efficientOn(){
+    box2.classList.add('hovered');
+    box1.classList.add('hovered');
+    box4Container.classList.add('hovered');
+
+    tooltip1.addClass('tooltip-icon-inactive')
+    tooltip2.addClass('tooltip-icon-inactive')
+    tooltip6.addClass('tooltip-icon-inactive')
+    tooltip7.addClass('tooltip-icon-inactive')
+    tooltip8.addClass('tooltip-icon-inactive')
+    tooltip9.addClass('tooltip-icon-inactive')
+    tooltip10.addClass('tooltip-icon-inactive')
+    tooltip11.addClass('tooltip-icon-inactive')
+
+    futureBubble1.hide();
+    futureBubble1Off.show();
+}
+
+function efficientReset(){
+    box2.classList.remove('hovered')
+    box1.classList.remove('hovered')
+    box4Container.classList.remove('hovered')
+
+    resetIcons();
+}
+
+function predictiveOn(){
     box1.classList.add('hovered');
     box3Container.classList.add('hovered');
     box4Container.classList.add('hovered');
@@ -91,43 +258,16 @@ box2.addEventListener('mouseenter', () => {
 
     futureBubble1.hide();
     futureBubble1Off.show();
-});
+}
 
-box2.addEventListener('mouseleave', () => {
+function predictiveReset(){
     box1.classList.remove('hovered')
     box3Container.classList.remove('hovered')
     box4Container.classList.remove('hovered')
 
     resetIcons();
-});
-
-box3Container.addEventListener('mouseenter', () => {
-    box2.classList.add('hovered');
-    box1.classList.add('hovered');
-    box4Container.classList.add('hovered');
-
-    tooltip1.addClass('tooltip-icon-inactive')
-    tooltip2.addClass('tooltip-icon-inactive')
-    tooltip6.addClass('tooltip-icon-inactive')
-    tooltip7.addClass('tooltip-icon-inactive')
-    tooltip8.addClass('tooltip-icon-inactive')
-    tooltip9.addClass('tooltip-icon-inactive')
-    tooltip10.addClass('tooltip-icon-inactive')
-    tooltip11.addClass('tooltip-icon-inactive')
-
-    futureBubble1.hide();
-    futureBubble1Off.show();
-});
-
-box3Container.addEventListener('mouseleave', () => {
-    box2.classList.remove('hovered')
-    box1.classList.remove('hovered')
-    box4Container.classList.remove('hovered')
-
-    resetIcons();
-});
-
-box4Container.addEventListener('mouseenter', () => {
+}
+function futureOn(){
     box2.classList.add('hovered');
     box3Container.classList.add('hovered');
     box1.classList.add('hovered');
@@ -140,15 +280,15 @@ box4Container.addEventListener('mouseenter', () => {
     tooltip6.addClass('tooltip-icon-inactive')
     tooltip7.addClass('tooltip-icon-inactive')
     tooltip8.addClass('tooltip-icon-inactive')
-});
+}
 
-box4Container.addEventListener('mouseleave', () => {
+function futureReset(){
     box2.classList.remove('hovered')
     box3Container.classList.remove('hovered')
     box1.classList.remove('hovered')
 
     resetIcons();
-});
+}
 
 const showCenterText = () => {
     for(var i=0; i < len; i++) {
