@@ -170,6 +170,10 @@
     top: 2px;
     left: -2px;
   }
+
+  .tooltip-block.tooltip-tag .tooltip-icon:hover svg {
+    top: 0px;
+  }
     
   .tooltip-block.tooltip-tag .tooltip-text {
     width: 257px;
