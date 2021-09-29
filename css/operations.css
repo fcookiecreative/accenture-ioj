@@ -1,174 +1,169 @@
 /* Operations*/
 h1 {
-  font-family: 'Graphik Bold', 'Arial Black', sans-serif;
+  font-family: "Graphik Bold", "Arial Black", sans-serif;
   font-style: normal;
   font-size: 35px;
   line-height: 35px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-  
-  .ioj-stable-operations{
-    background: linear-gradient(90deg, #464B52, #5D6166, #73777A, #898C8D);
-    background-size: 400% 400%;
-    animation: gradient 8s ease infinite;
-    z-index: 2;
-    position: relative;
-  }
-  .ioj-efficient-operations{
-    background: linear-gradient(-90deg, #898C8D, #5C9CB4, #2EABDA, #00BAFF);
-    background-size: 400% 400%;
-    animation: gradient 8s ease infinite;
-    z-index: 2;
-    position: relative;
-  }
-  .ioj-predictive-operations{
-    background: linear-gradient(270deg, #00BAFF, #337BE9, #653DD3, #9500BD);
-    background-size: 400% 400%;
-    animation: gradient 8s ease infinite;
-    z-index: 2;
-    position: relative;
-    overflow: hidden;
-  }
-  .ioj-future-operations{
-    background: linear-gradient(90deg, #9500BD, #B72E9E, #D95D7D, #FB8C5B);
-    background-size: 400% 400%;
-    animation: gradient 8s ease infinite;
-    z-index: 2;
-    position: relative;
-  }
-  
-  .ioj-operations-main-image{
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    z-index: 1;
-  }
-  
-  .ioj-operations-title{
-    padding: 30px 0 0 30px;
-  }
-  
-  .ioj-operations-title h1{
-    margin: 0;
-  }
-  
-  .ioj-operations-subtitle{
-    padding: 10px 0 0 30px;
-    font-family: 'Graphik Regular', 'Arial Black', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 30px;
-    color: #FFFFFF;
-    /* margin-right: 28%; */
-    margin-right: 30%;
-  }
-  
-  .ioj-operations-outcomes{
-    padding: 15px 0 0 30px;
-    font-family: 'Graphik Regular', 'Arial Black', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 18px;
-    color: #FFFFFF;
-  }
-  
-  .ioj-operation-images{
-    margin: 53px 0 0 30px;
-    height: 60px;
-    width: 60px;
-    
-  }
-  .ioj-operation-images  img{
-    border-radius: 50%;
-    background: #FFFFFF;
-    margin-right: 60px;
-    height: 60px;
-    width: 60px;
-    padding: 10px;
-  }
-  .image-column {
-    float: left;
-    width: 70px;
-    margin-right: 60px;
-    padding: 5px;
-  }
-  
-  .ioj-operation-image-text{
-    color: #FFFFFF;
-    font-size: 14px;
-    line-height: 17px;  
-    font-weight: 500;
-    text-align: center;
-    padding-top: 7px;
-  }
-  
-  .ioj-operation-image-details ul{
-    margin:0;
-  }
-  
-  .ioj-operation-image-details, .ioj-operation-image-details li{
-    color: #FFFFFF;
-    font-size: 13px;
-    line-height: 18px;  
-    font-weight: 500;
-    text-align: left;
-    padding-left: 0px;
-  }
-  
- 
-  
-  .ioj-operation-image-details{
-  
-    width: 300px;
-    text-align: left;
-    position: absolute;
-    left: 0;
-    top: 100px;
-  }
-  
-  
-  .ioj-operation-image-details{
-    display: none;
-  }
-  
-  .show .ioj-operation-image-details {
+
+.ioj-stable-operations {
+  background: linear-gradient(90deg, #464b52, #5d6166, #73777a, #898c8d);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  z-index: 2;
+  position: relative;
+}
+.ioj-efficient-operations {
+  background: linear-gradient(-90deg, #898c8d, #5c9cb4, #2eabda, #00baff);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  z-index: 2;
+  position: relative;
+}
+.ioj-predictive-operations {
+  background: linear-gradient(270deg, #00baff, #337be9, #653dd3, #9500bd);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+}
+.ioj-future-operations {
+  background: linear-gradient(90deg, #9500bd, #b72e9e, #d95d7d, #fb8c5b);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  z-index: 2;
+  position: relative;
+}
+
+.ioj-operations-main-image {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.ioj-operations-title {
+  padding: 30px 0 0 30px;
+}
+
+.ioj-operations-title h1 {
+  margin: 0;
+}
+
+.ioj-operations-subtitle {
+  padding: 10px 0 0 30px;
+  font-family: "Graphik Regular", "Arial Black", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 30px;
+  color: #ffffff;
+  /* margin-right: 28%; */
+  margin-right: 30%;
+}
+
+.ioj-operations-outcomes {
+  padding: 15px 0 0 30px;
+  font-family: "Graphik Regular", "Arial Black", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.ioj-operation-images {
+  margin: 53px 0 0 30px;
+  height: 60px;
+  width: 60px;
+}
+.ioj-operation-images img {
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 60px;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+}
+.image-column {
+  float: left;
+  width: 70px;
+  margin-right: 60px;
+  padding: 5px;
+}
+
+.ioj-operation-image-text {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.ioj-operation-image-details ul {
+  margin: 0;
+}
+
+.ioj-operation-image-details,
+.ioj-operation-image-details li {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 0px;
+}
+
+.ioj-operation-image-details {
+  width: 300px;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+
+.ioj-operation-image-details {
+  display: none;
+}
+
+.show .ioj-operation-image-details {
   display: block;
-  }
-  
-  .image-row{
-    width: 480px;
-    height: 60px;
-    position: relative;
-    z-index: 2;
-  }
-  .image-row::after {
-    
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .show img{
-    display: none;
-  }
-  
-  .image-on{
-    display: none;
-  }
-  
-  .show img.image-on{
-    display: block;
-  }
-  
-  .image-column.show img{
-    padding: 0;
-  }
-  
-  .image-column img{
-    cursor: pointer;
-  }
+}
+
+.image-row {
+  width: 480px;
+  height: 60px;
+  position: relative;
+  z-index: 2;
+}
+.image-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.show img {
+  display: none;
+}
+
+.image-on {
+  display: none;
+}
+
+.show img.image-on {
+  display: block;
+}
+
+.image-column.show img {
+  padding: 0;
+}
+
+.image-column img {
+  cursor: pointer;
+}
 
 .ioj-operations-scene-image {
   position: absolute;
@@ -179,26 +174,26 @@ h1 {
 .ioj-operations-scene-image:nth-child(1) {
   width: 85px;
   left: 80px;
-  animation: scene1 2s cubic-bezier(0, 0, 0.2, 1) 0s 1 normal forwards;
+  animation: scene1 1s cubic-bezier(0, 0, 0.2, 1) 0s 1 normal forwards;
 }
 
 .ioj-operations-scene-image:nth-child(2) {
   width: 240px;
   left: 295px;
-  animation: scene2 2s cubic-bezier(0, 0, 0.2, 1) 2s 1 normal forwards;
+  animation: scene2 1s cubic-bezier(0, 0, 0.2, 1) 1s 1 normal forwards;
 }
 
 .ioj-operations-scene-image:nth-child(3) {
   width: 275px;
   left: 570px;
   z-index: 3;
-  animation: scene3 2s cubic-bezier(0, 0, 0.2, 1) 4s 1 normal forwards;
+  animation: scene3 1s cubic-bezier(0, 0, 0.2, 1) 2s 1 normal forwards;
 }
 
 .ioj-operations-scene-image:nth-child(4) {
   width: 210px;
-  lefT: 777px;
-  animation: scene4 2s cubic-bezier(0, 0, 0.2, 1) 6s 1 normal forwards;
+  left: 777px;
+  animation: scene4 1s cubic-bezier(0, 0, 0.2, 1) 3s 1 normal forwards;
 }
 
 @keyframes scene1 {
