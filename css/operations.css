@@ -61,7 +61,8 @@ h1{
     font-size: 19px;
     line-height: 30px;
     color: #FFFFFF;
-    margin-right: 28%;
+    /* margin-right: 28%; */
+    margin-right: 30%;
   }
   
   .ioj-operations-outcomes{
