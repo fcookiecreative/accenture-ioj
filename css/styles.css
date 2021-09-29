@@ -77,7 +77,7 @@
 
 /* added to try to remove jump on hover */
 .ioj-nav > ul > li.active > a {
-  bottom: 0;
+  bottom: 1;
 }
 
 .ioj-carousel-content {
