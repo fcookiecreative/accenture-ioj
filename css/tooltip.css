@@ -1,280 +1,278 @@
-
-
 .tooltip-block .tooltip-icon {
-    position: absolute;
-    padding: 5px;
-    z-index: 6;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    text-align: center;
-    border: 1px transparent;
-    background: rgb(255,75,255);
-    background: -moz-linear-gradient(0deg, rgba(255,75,255,1) 0%, rgba(132,44,176,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(255,75,255,1) 0%, rgba(132,44,176,1) 100%);
-    background: linear-gradient(0deg, rgba(255,75,255,1) 0%, rgba(132,44,176,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4bff",endColorstr="#842cb0",GradientType=1);
-  }
+  position: absolute;
+  padding: 5px;
+  z-index: 6;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px transparent;
+  background: rgb(255,75,255);
+  background: -moz-linear-gradient(0deg, rgba(255,75,255,1) 0%, rgba(132,44,176,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(255,75,255,1) 0%, rgba(132,44,176,1) 100%);
+  background: linear-gradient(0deg, rgba(255,75,255,1) 0%, rgba(132,44,176,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4bff",endColorstr="#842cb0",GradientType=1);
+}
 
-  .tooltip-block .tooltip-icon-large {
-    width: 49px;
-    height: 49px;
-  }
-  
-  .tooltip-block .tooltip-icon:hover {
-    background: rgb(70,0,115);
-    background: -moz-linear-gradient(0deg, rgba(70,0,115,1) 0%, rgba(132,44,176,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(70,0,115,1) 0%, rgba(132,44,176,1) 100%);
-    background: linear-gradient(0deg, rgba(70,0,115,1) 0%, rgba(132,44,176,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#460073",endColorstr="#842cb0",GradientType=1);
-    border: #FFFFFF 1px solid;
-  }
+.tooltip-block .tooltip-icon-large {
+  width: 49px;
+  height: 49px;
+}
 
-  .tooltip-block .tooltip-icon-inactive {
-    background: rgb(101, 101, 101);
-    background: -moz-linear-gradient(0deg, rgbargb(101, 101, 101) 0%, rgba(70, 75, 82, 1) 100%);
-    background: -webkit-linear-gradient(0deg, rgbargb(101, 101, 101) 0%, rgba(70, 75, 82, 1) 100%);
-    background: linear-gradient(0deg, rgbargb(101, 101, 101) 0%, rgba(70, 75, 82, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656565",endColorstr="#464B52",GradientType=1);
-  }
+.tooltip-block .tooltip-icon:hover {
+  background: rgb(70,0,115);
+  background: -moz-linear-gradient(0deg, rgba(70,0,115,1) 0%, rgba(132,44,176,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(70,0,115,1) 0%, rgba(132,44,176,1) 100%);
+  background: linear-gradient(0deg, rgba(70,0,115,1) 0%, rgba(132,44,176,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#460073",endColorstr="#842cb0",GradientType=1);
+  border: #FFFFFF 1px solid;
+}
 
-  .tooltip-block.tooltip-off .tooltip-icon {
-    background: rgb(101,101,101);
-    background: -moz-linear-gradient(0deg, rgba(101,101,101,1) 0%, rgba(70,75,82,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(101,101,101,1) 0%, rgba(70,75,82,1) 100%);
-    background: linear-gradient(0deg, rgba(101,101,101,1) 0%, rgba(70,75,82,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656565",endColorstr="#464b52",GradientType=1);
-  }
-  
-  .tooltip-block .tooltip-text {
-    padding: 15px 30px;
-    font-size: 11px;
-    line-height: 16px;
-    box-shadow: 0px 2px 6px #A7A7A7;
-    border-radius: 65px;
-    background-color: rgba(255, 255, 255, 0.9);
-    position: absolute;
-    display: none;
-  }
-  .tooltip-block .tooltip-text span{
-    display: block;
-    color: #7500C0;
-  }
-  .tooltip-block:hover .tooltip-text {
-    display: block;
-  }
+.tooltip-block .tooltip-icon-inactive {
+  background: rgb(101, 101, 101);
+  background: -moz-linear-gradient(0deg, rgbargb(101, 101, 101) 0%, rgba(70, 75, 82, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgbargb(101, 101, 101) 0%, rgba(70, 75, 82, 1) 100%);
+  background: linear-gradient(0deg, rgbargb(101, 101, 101) 0%, rgba(70, 75, 82, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656565",endColorstr="#464B52",GradientType=1);
+}
 
-  /* Dollar */
+.tooltip-block.tooltip-off .tooltip-icon {
+  background: rgb(101,101,101);
+  background: -moz-linear-gradient(0deg, rgba(101,101,101,1) 0%, rgba(70,75,82,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(101,101,101,1) 0%, rgba(70,75,82,1) 100%);
+  background: linear-gradient(0deg, rgba(101,101,101,1) 0%, rgba(70,75,82,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656565",endColorstr="#464b52",GradientType=1);
+}
 
-  .tooltip-block.tooltip-dollar .tooltip-icon {
-    top: 50px;
-    left: 316px;
-  }
-  .tooltip-block.tooltip-dollar .tooltip-icon svg {
-    position: relative;
-    left: -2px;
-  }
-  
-  
-  .tooltip-block.tooltip-dollar .tooltip-text {
-    width: 257px;
-    text-align: center;
-    top: -28px;
-    left: 203px;
-    z-index: 6;
-  }  
-  
-  /* Check */
-  
-  .tooltip-block.tooltip-check .tooltip-icon {
-    top: 98px;
-    left: 368px;
-  }
-  .tooltip-block.tooltip-check .tooltip-icon svg {
-    position: relative;
-    left: -1px;
-    top: 2px;
-  }
-  
-  
-  .tooltip-block.tooltip-check .tooltip-text {
-    width: 257px;
-    text-align: center;
-    top: 19px;
-    left: 248px;
-    z-index: 6;
-  }
+.tooltip-block .tooltip-text {
+  padding: 15px 30px;
+  font-size: 11px;
+  line-height: 16px;
+  box-shadow: 0px 2px 6px #A7A7A7;
+  border-radius: 65px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  display: none;
+}
 
-  /* Smiley */
-  
-  .tooltip-block.tooltip-smiley .tooltip-icon {
-    top: 320px;
-    left: 363px;
-  }
-  .tooltip-block.tooltip-smiley .tooltip-icon svg {
-    position: relative;
-  }
-    
-  .tooltip-block.tooltip-smiley .tooltip-text {
-    width: 257px;
-    text-align: center;
-    top: 241px;
-    left: 248px;
-    z-index: 6;
-  }
+.tooltip-block .tooltip-text span{
+  display: block;
+  color: #7500C0;
+}
 
-  /* Badge */
-  
-  .tooltip-block.tooltip-badge .tooltip-icon {
-    top: 365px;
-    left: 307px;
-  }
-  .tooltip-block.tooltip-badge .tooltip-icon svg {
-    position: relative;
-  }
-    
-  .tooltip-block.tooltip-badge .tooltip-text {
-    width: 257px;
-    text-align: center;
-    top: 285px;
-    left: 195px;
-    z-index: 6;
-  }
+.tooltip-block:hover .tooltip-text {
+  display: block;
+}
 
-  /* Gear */
-  
-  .tooltip-block.tooltip-gear .tooltip-icon {
-    top: 411px;
-    left: 254px;
-  }
-  .tooltip-block.tooltip-gear .tooltip-icon svg {
-    position: relative;
-  }
-    
-  .tooltip-block.tooltip-gear .tooltip-text {
-    width: 257px;
-    text-align: center;
-    top: 332px;
-    left: 145px;
-    z-index: 6;
-  }
+/* Dollar */
+.tooltip-block.tooltip-dollar .tooltip-icon {
+  top: 50px;
+  left: 316px;
+}
 
-  /* Tag */
-  
-  .tooltip-block.tooltip-tag .tooltip-icon {
-    top: 140px;
-    left: 660px;
-  }
-  .tooltip-block.tooltip-tag .tooltip-icon svg {
-    position: relative;
-    top: 2px;
-    left: -2px;
-  }
+.tooltip-block.tooltip-dollar .tooltip-icon svg {
+  position: relative;
+  left: -2px;
+}
 
-  .tooltip-block.tooltip-tag .tooltip-icon:hover svg {
-    top: 0px;
-  }
-    
-  .tooltip-block.tooltip-tag .tooltip-text {
-    width: 257px;
-    text-align: center;
-    top: 60px;
-    left: 539px;
-    z-index: 7;
-  }
+.tooltip-block.tooltip-dollar .tooltip-text {
+  width: 257px;
+  text-align: center;
+  top: -28px;
+  left: 203px;
+  z-index: 6;
+}
 
-  /* Graph */
-  
-  .tooltip-block.tooltip-graph .tooltip-icon {
-    top: 115px;
-    left: 761px;
-  }
-  .tooltip-block.tooltip-graph .tooltip-icon svg {
-    position: relative;
-    top: 1px;
-    left: 1px;
-  }
-    
-  .tooltip-block.tooltip-graph .tooltip-text {
-    width: 257px;
-    text-align: center;
-    top: 36px;
-    left: 645px;
-    z-index: 6;
-  }
+/* Check */
+.tooltip-block.tooltip-check .tooltip-icon {
+  top: 98px;
+  left: 368px;
+}
 
-  /* Thumb */
-  
-  .tooltip-block.tooltip-thumb .tooltip-icon {
-    top: 115px;
-    left: 929px;
-  }
-  .tooltip-block.tooltip-thumb .tooltip-icon svg {
-    position: relative;
-  }
-    
-  .tooltip-block.tooltip-thumb .tooltip-text {
-    width: 257px;
-    text-align: center;
-    top: 36px;
-    right: 8px;
-    z-index: 6;
-  }
+.tooltip-block.tooltip-check .tooltip-icon svg {
+  position: relative;
+  left: -1px;
+  top: 2px;
+}
 
-   /* Thumb2 */
-  
-   .tooltip-block.tooltip-thumb-future .tooltip-icon {
-    top: 385px;
-    left: 714px;
-  }
-  .tooltip-block.tooltip-thumb-future .tooltip-icon svg {
-    position: relative;
-    left: 2px;
-  }
-    
-  .tooltip-block.tooltip-thumb-future .tooltip-text {
-    width: 257px;
-    text-align: center;
-    top: 306px;
-    left: 600px;
-    z-index: 7;
-  }
+.tooltip-block.tooltip-check .tooltip-text {
+  width: 257px;
+  text-align: center;
+  top: 19px;
+  left: 248px;
+  z-index: 6;
+}
 
-  /* Person */
-  
-  .tooltip-block.tooltip-person .tooltip-icon {
-    top: 386px;
-    left: 815px;
-  }
-  .tooltip-block.tooltip-person .tooltip-icon svg {
-    position: relative;
-    top: -1px;
-    left: 2px;
-  }
-    
-  .tooltip-block.tooltip-person .tooltip-text {
-    width: 257px;
-    text-align: center;
-    top: 306px;
-    right: 43px;
-    z-index: 6;
-  }
+/* Smiley */
+.tooltip-block.tooltip-smiley .tooltip-icon {
+  top: 320px;
+  left: 363px;
+}
 
-  /* Star */
-  
-  .tooltip-block.tooltip-star .tooltip-icon {
-    top: 382px;
-    left: 920px;
-  }
-  .tooltip-block.tooltip-star .tooltip-icon svg {
-    position: relative;
-    padding: 3px;
-  }
-    
-  .tooltip-block.tooltip-star .tooltip-text {
-    width: 257px;
-    text-align: center;
-    top: 303px;
-    right: 8px;
-    z-index: 6;
-  }
+.tooltip-block.tooltip-smiley .tooltip-icon svg {
+  position: relative;
+}
+
+.tooltip-block.tooltip-smiley .tooltip-text {
+  width: 257px;
+  text-align: center;
+  top: 241px;
+  left: 248px;
+  z-index: 6;
+}
+
+/* Badge */
+.tooltip-block.tooltip-badge .tooltip-icon {
+  top: 365px;
+  left: 307px;
+}
+
+.tooltip-block.tooltip-badge .tooltip-icon svg {
+  position: relative;
+}
+
+.tooltip-block.tooltip-badge .tooltip-text {
+  width: 257px;
+  text-align: center;
+  top: 285px;
+  left: 195px;
+  z-index: 6;
+}
+
+/* Gear */
+.tooltip-block.tooltip-gear .tooltip-icon {
+  top: 411px;
+  left: 254px;
+}
+
+.tooltip-block.tooltip-gear .tooltip-icon svg {
+  position: relative;
+}
+
+.tooltip-block.tooltip-gear .tooltip-text {
+  width: 257px;
+  text-align: center;
+  top: 332px;
+  left: 145px;
+  z-index: 6;
+}
+
+/* Tag */
+.tooltip-block.tooltip-tag .tooltip-icon {
+  top: 140px;
+  left: 660px;
+}
+
+.tooltip-block.tooltip-tag .tooltip-icon svg {
+  position: relative;
+  top: 2px;
+  left: -2px;
+}
+
+.tooltip-block.tooltip-tag .tooltip-icon:hover svg {
+  top: 0px;
+}
+
+.tooltip-block.tooltip-tag .tooltip-text {
+  width: 257px;
+  text-align: center;
+  top: 60px;
+  left: 539px;
+  z-index: 7;
+}
+
+/* Graph */
+.tooltip-block.tooltip-graph .tooltip-icon {
+  top: 115px;
+  left: 761px;
+}
+
+.tooltip-block.tooltip-graph .tooltip-icon svg {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+.tooltip-block.tooltip-graph .tooltip-text {
+  width: 257px;
+  text-align: center;
+  top: 36px;
+  left: 645px;
+  z-index: 6;
+}
+
+/* Thumb */
+.tooltip-block.tooltip-thumb .tooltip-icon {
+  top: 115px;
+  left: 929px;
+}
+
+.tooltip-block.tooltip-thumb .tooltip-icon svg {
+  position: relative;
+}
+
+.tooltip-block.tooltip-thumb .tooltip-text {
+  width: 257px;
+  text-align: center;
+  top: 36px;
+  right: 8px;
+  z-index: 6;
+}
+
+/* Thumb2 */
+.tooltip-block.tooltip-thumb-future .tooltip-icon {
+  top: 385px;
+  left: 714px;
+}
+
+.tooltip-block.tooltip-thumb-future .tooltip-icon svg {
+  position: relative;
+  left: 2px;
+}
+
+.tooltip-block.tooltip-thumb-future .tooltip-text {
+  width: 257px;
+  text-align: center;
+  top: 306px;
+  left: 600px;
+  z-index: 7;
+}
+
+/* Person */
+.tooltip-block.tooltip-person .tooltip-icon {
+  top: 386px;
+  left: 815px;
+}
+
+.tooltip-block.tooltip-person .tooltip-icon svg {
+  position: relative;
+  top: -1px;
+  left: 2px;
+}
+
+.tooltip-block.tooltip-person .tooltip-text {
+  width: 257px;
+  text-align: center;
+  top: 306px;
+  right: 43px;
+  z-index: 6;
+}
+
+/* Star */
+.tooltip-block.tooltip-star .tooltip-icon {
+  top: 382px;
+  left: 920px;
+}
+
+.tooltip-block.tooltip-star .tooltip-icon svg {
+  position: relative;
+  padding: 3px;
+}
+
+.tooltip-block.tooltip-star .tooltip-text {
+  width: 257px;
+  text-align: center;
+  top: 303px;
+  right: 8px;
+  z-index: 6;
+}
