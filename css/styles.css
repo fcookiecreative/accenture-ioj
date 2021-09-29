@@ -75,6 +75,11 @@
   border-bottom: 2px solid #fff;
 }
 
+/* added to try to remove jump on hover */
+.ioj-nav > ul > li.active > a {
+  bottom: 0;
+}
+
 .ioj-carousel-content {
   height: 582px;
   background: linear-gradient(180deg, #1B7CD1 8%, #BFDDF2 32.92%);
