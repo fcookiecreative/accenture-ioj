@@ -1,134 +1,134 @@
 .hovered .ioj-journey-slide__image-off {
-    opacity: 1;
-  }
-  
-  .hovered .ioj-journey-slide__image-on {
-    opacity: 0;
-  }
+  opacity: 1;
+}
 
-  .future-hover1, .future-bubble1 {
-    z-index: 7;
-    position: absolute;
-    top: 427px;
-    left: 121px;
-    width: 130px;
-    height: 130px;
-  }
+.hovered .ioj-journey-slide__image-on {
+  opacity: 0;
+}
 
-  .future-bubble1-off {
-    z-index: 7;
-    position: absolute;
-    top: 423px;
-    left: 113px;
-    width: 130px;
-    height: 130px;
-  }
-  .future-bubble-1 {
-    z-index: 6;
-  }
-  .future-hover1 img{
-    width: 100%;
-    display: none;
-  }
-  
-  .future-bubble1 img {
-    height: 150px;
-    width: 150px;
-    left: -15px;
-    top: -10px;
-    position: relative;
-  }
+.future-hover1,
+.future-bubble1 {
+  z-index: 7;
+  position: absolute;
+  top: 427px;
+  left: 121px;
+  width: 130px;
+  height: 130px;
+}
 
-  .future-bubble1-off img {
-    height: 158px;
-    width: 157px;
-    left: -15px;
-    top: -10px;
-    position: relative;
-  }
+.future-bubble1-off {
+  z-index: 7;
+  position: absolute;
+  top: 423px;
+  left: 113px;
+  width: 130px;
+  height: 130px;
+}
+.future-bubble-1 {
+  z-index: 6;
+}
+.future-hover1 img {
+  width: 100%;
+  display: none;
+}
 
-  .future-hover1:hover img,
-  .future-hover1:focus img {
-    display: block;
-  }
-  .future-hover1:focus {
-    outline: none;
-    box-shadow: none;
-    transform: scale(1.1);
-  }
-  
-  .future-hover2 {
-    z-index: 7;
-    position: absolute;
-    top: 378px;
-    left: 378px;
-    width: 130px;
-    height: 130px;
-  }
-  
-  .future-hover2 img {
-    width: 100%;
-    display: none;
-  }
-  
-  .future-hover2:hover img,
-  .future-hover2:focus img {
-    display: block;
-  }
-  .future-hover2:focus {
-    outline: none;
-    box-shadow: none;
-    transform: scale(1.1);
-  }
-  
-  .future-hover3 {
-    z-index: 7;
-    position: absolute;
-    top: 313px;
-    left: 562px;
-    width: 130px;
-    height: 130px;
-  }
-  
-  .future-hover3 img {
-    width: 100%;
-    display: none;
-  }
-  
-  .future-hover3:hover img,
-  .future-hover3:focus img {
-    display: block;
-  }
-  .future-hover3:focus {
-    outline: none;
-    box-shadow: none;
-    transform: scale(1.1);
-  }
-  
-  .future-hover4 {
-    z-index: 7;
-    position: absolute;
-    top: 247px;
-    left: 757px;
-    width: 130px;
-    height: 130px;
-  }
-  
-  .future-hover4 img {
-    width: 100%;
-    display: none;
-  }
-  
-  .future-hover4:hover img,
-  .future-hover4:focus img {
-    display: block;
-  }
-  .future-hover4:focus {
-    outline: none;
-    box-shadow: none;
-    transform: scale(1.1);
-  }
+.future-bubble1 img {
+  height: 133px;
+  width: 133px;
+  left: -1px;
+  top: -1px;
+  position: relative;
+}
 
+.future-bubble1-off img {
+  height: 158px;
+  width: 157px;
+  left: -15px;
+  top: -10px;
+  position: relative;
+}
+
+.future-hover1:hover img,
+.future-hover1:focus img {
+  display: block;
+}
+.future-hover1:focus {
+  outline: none;
+  box-shadow: none;
+  transform: scale(1.1);
+}
+
+.future-hover2 {
+  z-index: 7;
+  position: absolute;
+  top: 378px;
+  left: 378px;
+  width: 130px;
+  height: 130px;
+}
+
+.future-hover2 img {
+  width: 100%;
+  display: none;
+}
+
+.future-hover2:hover img,
+.future-hover2:focus img {
+  display: block;
+}
+.future-hover2:focus {
+  outline: none;
+  box-shadow: none;
+  transform: scale(1.1);
+}
+
+.future-hover3 {
+  z-index: 7;
+  position: absolute;
+  top: 313px;
+  left: 562px;
+  width: 130px;
+  height: 130px;
+}
+
+.future-hover3 img {
+  width: 100%;
+  display: none;
+}
+
+.future-hover3:hover img,
+.future-hover3:focus img {
+  display: block;
+}
+.future-hover3:focus {
+  outline: none;
+  box-shadow: none;
+  transform: scale(1.1);
+}
+
+.future-hover4 {
+  z-index: 7;
+  position: absolute;
+  top: 247px;
+  left: 757px;
+  width: 130px;
+  height: 130px;
+}
+
+.future-hover4 img {
+  width: 100%;
+  display: none;
+}
+
+.future-hover4:hover img,
+.future-hover4:focus img {
+  display: block;
+}
+.future-hover4:focus {
+  outline: none;
+  box-shadow: none;
+  transform: scale(1.1);
+}
 
 .ioj-journey-slide__image-on,
 .ioj-journey-slide__image-off {
@@ -136,18 +136,16 @@
   display: block;
   transition: opacity 1s ease-out;
 }
-  
-  
-  
-  @media (min-width: 768px) {
-    .ioj-wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 70px 0;
-    }
-  
-    .ioj-title {
-      font-size: 48px;
-      line-height: 55px;
-    }
+
+@media (min-width: 768px) {
+  .ioj-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 0;
   }
+
+  .ioj-title {
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
