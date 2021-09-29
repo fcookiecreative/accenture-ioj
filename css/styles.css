@@ -361,22 +361,37 @@
   }
 }
 
-/* Grow */
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateZ(0);
+/* Grow Icons */
+.ioj-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 60px;
+  background-color: #fff;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
   transition-duration: 0.3s;
   transition-property: transform;
 }
 
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
+.ioj-icon-button svg {
+  fill: #1b7cd1;
+}
+
+.ioj-icon-button:hover,
+.ioj-icon-button:focus,
+.ioj-icon-button:active {
   transform: scale(1.1);
+}
+
+.show .ioj-icon-button {
+  background: linear-gradient(53.22deg, #1b7cd1 11.78%, #00baff 88.34%);
+}
+
+.show .ioj-icon-button svg {
+  fill: #fff;
 }
 
 strong {
