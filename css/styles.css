@@ -88,7 +88,7 @@
 /* First Slide Parts positioning */
 
 .ioj-journey-slide__image-off {
-  display: none;
+  opacity: 0;
 }
 
 /* .ioj-journey-slide-part:hover .ioj-journey-slide__image-on {
@@ -123,7 +123,7 @@
     z-index: 2;
 }
 .ioj-journey-efficient .ioj-journey-slide__image-off{
-  position: relative;
+  /*position: relative;*/
   top: -16px;
 }
 
@@ -131,6 +131,8 @@
   position: absolute;
   right: 0;
   bottom: 55.46%;
+  width: 532px;
+  height: 251px;
 }
 
 .ioj-journey-predictive .ioj-journey-slide__image-off {
@@ -141,6 +143,8 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  width: 1000px;
+  height: 357px;
 }
 .ioj-journey-future img.ioj-journey-slide__image-off,
 .ioj-journey-future img.ioj-journey-slide__image-on {

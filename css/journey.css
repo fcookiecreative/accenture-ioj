@@ -1,9 +1,9 @@
 .hovered .ioj-journey-slide__image-off {
-    display: block;
+    opacity: 1;
   }
   
   .hovered .ioj-journey-slide__image-on {
-    display: none;
+    opacity: 0;
   }
 
   .future-hover1, .future-bubble1 {
@@ -128,6 +128,14 @@
     box-shadow: none;
     transform: scale(1.1);
   }
+
+
+.ioj-journey-slide__image-on,
+.ioj-journey-slide__image-off {
+  position: absolute;
+  display: block;
+  transition: opacity 1s ease-out;
+}
   
   
   
