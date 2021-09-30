@@ -50,6 +50,8 @@
 @media (min-width: 1000px) {
   .ioj-operations-title h2 {
     font-size: 35px;
+    line-height: 35px;
+    margin-top: 0;
   }
 }
 
