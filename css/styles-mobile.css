@@ -72,6 +72,17 @@
   .ioj-nav-mobile > ul > li.active > a {
     border-bottom: 3px solid #fff;
   }
+
+  .ioj-carousel-slide-mobile {
+    position: relative;
+    min-height: 540px;
+  }
+
+  /* @todo: replace img class */
+  .ioj-carousel-slide-mobile .ioj-operations-main-image {
+    position: absolute;
+    bottom: 0;
+  }
   
   .ioj-carousel-slide-mobile .ioj-operations-main-image{
     width: 100%;
@@ -89,7 +100,7 @@
   .ioj-future-operations-mobile{
     background: linear-gradient(90.14deg, #9500BD 0.11%, #FB8C5B 99.87%);
   }
-  
+
   /* border shadow on mobile */
   .ioj-carousel-content-mobile .ioj-mobile-modal .ioj-journey-slide-part {
     box-shadow: 0 2px 2px 2px rgb(0 0 0 / 20%);
@@ -124,9 +135,9 @@
     top: 5px;
   }
   
-  .ioj-carousel-content-mobile .ioj-operations-main-image {
+  /*.ioj-carousel-content-mobile .ioj-operations-main-image {
     position: static;
-  }
+  }*/
   
   .ioj-carousel-content-mobile .ioj-operation-images {
     background-color: #fff;
@@ -207,4 +218,37 @@
     position: relative;
     top: 5px;
   }
-  
+
+
+.ioj-slide-title-mobile {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  padding: 0 14px;
+  color: #fff;
+  background: #1B7CD1;
+  transition: top 0.4s ease-in;
+}
+
+.ioj-mobile-modal .ioj-slide-title-mobile {
+  top: -35px;
+}
+
+.ioj-mobile-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 4px;
+  background: linear-gradient(53.22deg, #1b7cd1 11.78%, #00baff 88.34%);
+  border-radius: 50%;
+}
+
+.ioj-mobile-icon svg {
+  fill: #fff;
+}
