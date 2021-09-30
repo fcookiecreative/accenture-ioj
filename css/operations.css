@@ -72,10 +72,11 @@
   .ioj-operations-subtitle {
     font-size: 19px;
     line-height: 30px;
+    max-width: 70%;
   }
 
   .ioj-predictive-operations .ioj-operations-subtitle {
-    max-width: 100%;
+    max-width: 75%;
   }
 }
 
