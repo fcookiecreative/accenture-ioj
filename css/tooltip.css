@@ -66,8 +66,8 @@
 
 /* Dollar */
 .tooltip-block.tooltip-dollar .tooltip-icon {
-  top: 50px;
-  left: 316px;
+  top: 8.6%; /* 50px */
+  left: 31.6%;
 }
 
 .tooltip-block.tooltip-dollar .tooltip-icon svg {
@@ -85,8 +85,8 @@
 
 /* Check */
 .tooltip-block.tooltip-check .tooltip-icon {
-  top: 98px;
-  left: 368px;
+  top: 16.8%; /* 98px */
+  left: 36.8%;
 }
 
 .tooltip-block.tooltip-check .tooltip-icon svg {
@@ -104,9 +104,16 @@
 }
 
 /* Smiley */
+
 .tooltip-block.tooltip-smiley .tooltip-icon {
-  top: 320px;
-  left: 363px;
+  top: 56.5%; /* 320px */
+  left: 36.3%;
+}
+
+@media (min-width: 1000px) {
+  .tooltip-block.tooltip-smiley .tooltip-icon {
+    top: 58.5%; /* 320px */
+  }
 }
 
 .tooltip-block.tooltip-smiley .tooltip-icon svg {
@@ -123,8 +130,14 @@
 
 /* Badge */
 .tooltip-block.tooltip-badge .tooltip-icon {
-  top: 365px;
-  left: 307px;
+  top: 64.7%; /* 365px */
+  left: 30.7%;
+}
+
+@media (min-width: 1000px) {
+  .tooltip-block.tooltip-badge .tooltip-icon {
+    top: 66.7%; /* 365px */
+  }
 }
 
 .tooltip-block.tooltip-badge .tooltip-icon svg {
@@ -141,8 +154,14 @@
 
 /* Gear */
 .tooltip-block.tooltip-gear .tooltip-icon {
-  top: 411px;
-  left: 254px;
+  top: 72.62%; /* 411px */
+  left: 25.4%;
+}
+
+@media (min-width: 1000px) {
+  .tooltip-block.tooltip-gear .tooltip-icon {
+    top: 74.62%; /* 411px */
+  }
 }
 
 .tooltip-block.tooltip-gear .tooltip-icon svg {
@@ -159,8 +178,8 @@
 
 /* Tag */
 .tooltip-block.tooltip-tag .tooltip-icon {
-  top: 140px;
-  left: 660px;
+  top: 24.05%; /* 140px */
+  left: 66%;
 }
 
 .tooltip-block.tooltip-tag .tooltip-icon svg {
@@ -183,8 +202,8 @@
 
 /* Graph */
 .tooltip-block.tooltip-graph .tooltip-icon {
-  top: 115px;
-  left: 761px;
+  top: 19.76%; /* 115px */
+  left: 76.1%;
 }
 
 .tooltip-block.tooltip-graph .tooltip-icon svg {
@@ -203,8 +222,8 @@
 
 /* Thumb */
 .tooltip-block.tooltip-thumb .tooltip-icon {
-  top: 115px;
-  left: 929px;
+  top: 19.76%; /* 115px */
+  left: 92.9%;
 }
 
 .tooltip-block.tooltip-thumb .tooltip-icon svg {
@@ -221,8 +240,8 @@
 
 /* Thumb2 */
 .tooltip-block.tooltip-thumb-future .tooltip-icon {
-  top: 385px;
-  left: 714px;
+  top: 66.15%; /* 385px */
+  left: 71.4%;
 }
 
 .tooltip-block.tooltip-thumb-future .tooltip-icon svg {
@@ -240,8 +259,8 @@
 
 /* Person */
 .tooltip-block.tooltip-person .tooltip-icon {
-  top: 386px;
-  left: 815px;
+  top: 66.32%; /* 386px */
+  left: 81.5%;
 }
 
 .tooltip-block.tooltip-person .tooltip-icon svg {
@@ -260,8 +279,8 @@
 
 /* Star */
 .tooltip-block.tooltip-star .tooltip-icon {
-  top: 382px;
-  left: 920px;
+  top: 65.64%; /* 382px */
+  left: 92%;
 }
 
 .tooltip-block.tooltip-star .tooltip-icon svg {

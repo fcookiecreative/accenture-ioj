@@ -141,6 +141,7 @@
 
 .ioj-journey-slide__image-on,
 .ioj-journey-slide__image-off {
+  width: 100%;
   position: absolute;
   display: block;
   transition: opacity 1s ease-out;
