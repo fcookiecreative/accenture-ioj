@@ -99,8 +99,8 @@
   .ioj-carousel-content-mobile .ioj-operations-subtitle {
     padding: 20px 15px;
     margin-right: 0;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 15px;
+    line-height: 23px;
   }
   .ioj-carousel-content-mobile .more {
     color: #fff;
@@ -140,7 +140,7 @@
     float: none;
     width: 100%;
     margin: 0;
-    padding: 20px 16px;
+    padding: 12px 16px;
   }
   
   .ioj-carousel-content-mobile .image-block {
