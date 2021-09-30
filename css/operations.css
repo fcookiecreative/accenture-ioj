@@ -169,10 +169,17 @@
 
 .image-row {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 180px;
   position: relative;
   z-index: 2;
+}
+
+@media(min-width: 768px) {
+  .image-row {
+    flex-direction: row;
+  }
 }
 
 @media(min-width: 1000px) {
