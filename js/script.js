@@ -1,13 +1,13 @@
 const imageText = document.querySelectorAll('.image-column');
 const wrapper = document.getElementsByClassName('ioj-carousel')[0];
-wrapper.addEventListener("click", event => {
-    const allIcons = document.querySelectorAll(".image-column");
+/*wrapper.addEventListener("click", event => {
+    const allIcons = document.querySelectorAll(".ioj-operations-image-block");
     allIcons.forEach(item => {
-        item.classList.remove("show");
+        item.classList.remove("active");
     });
-}, false);
+}, false);*/
 
-imageText.forEach(item => {
+/*imageText.forEach(item => {
     item.addEventListener('click', event => {
         const allIconsExceptCurrent = document.querySelectorAll(".image-column:not(this)");
         allIconsExceptCurrent.forEach(item => {
@@ -16,7 +16,7 @@ imageText.forEach(item => {
         event.currentTarget.classList.toggle("show");
         event.stopPropagation();
     }, false);
-});
+});*/
 
 const tooltip1 = $('.tooltip-dollar .tooltip-icon');
 const tooltip2 = $('.tooltip-check .tooltip-icon');

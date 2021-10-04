@@ -35,7 +35,7 @@
 .ioj-carousel {
   margin-top: 44px;
 }
-.ioj-nav {
+/*.ioj-nav {
   border-bottom: 2px solid #ffffff;
 }
 
@@ -54,9 +54,9 @@
   padding: 0 30px;
   display: flex;
   align-items: center;
-}
+}*/
 
-.ioj-nav > ul > li > a {
+/*.ioj-nav > ul > li > a {
   position: relative;
   bottom: -2px;
   font-size: 14px;
@@ -64,7 +64,7 @@
   font-family: "Graphik Medium", "Arial Black", sans-serif;
   color: #fff;
   border-bottom: 2px solid transparent;
-}
+}*/
 
 .ioj-nav > ul > li.active > a {
   font-family: "Graphik Medium", "Arial Black", sans-serif;
@@ -84,11 +84,11 @@
   background: linear-gradient(180deg, #1b7cd1 8%, #bfddf2 32.92%);
 }
 
-.ioj-carousel-slide {
+/*.ioj-carousel-slide {
   position: relative;
   height: 100%;
   padding: 3%;
-}
+}*/
 
 .ioj-carousel-slide.ioj-journey {
   padding: 0;
@@ -99,13 +99,6 @@
 .ioj-journey-slide__image-off {
   opacity: 0;
 }
-
-/* .ioj-journey-slide-part:hover .ioj-journey-slide__image-on {
-  display: none;
-}
-.ioj-journey-slide-part:hover .ioj-journey-slide__image-off {
-  display: block;
-} */
 
 .ioj-journey-slide__icon {
   position: absolute;
@@ -304,14 +297,14 @@
 }
 
 .hover-icons .future-hover1 {
-  top: 422px;
+  top: 435px;
   left: 235px;
   width: 141px;
   height: 141px;
 }
 
 .hover-icons .future-hover2 {
-  top: 333px;
+  top: 346px;
   left: 455px;
   width: 141px;
   height: 141px;
@@ -319,13 +312,13 @@
 
 .hover-icons .future-hover3 {
   left: 662px;
-  top: 305px;
+  top: 318px;
   width: 141px;
   height: 141px;
 }
 
 .hover-icons .future-hover4 {
-  top: 145px;
+  top: 158px;
   left: 814px;
   width: 141px;
   height: 141px;

@@ -10,25 +10,52 @@
   <link rel="stylesheet" href="css/operations.css">
   <link rel="stylesheet" href="css/journey.css">
   <link rel="stylesheet" href="css/styles-mobile.css">
+  <link rel="stylesheet" href="css/refactored.css">
 </head>
 <body>
   <div class="ioj-wrapper">
     <section>
       <div class="ioj-carousel">
-        <nav class="ioj-nav">
+        <nav class="ioj-nav ioj-nav--desktop">
           <ul>
-            <li class="active"><a href="javascript:void(0);" id="tab-journey">The Journey</a></li>
-            <li><a href="javascript:void(0);" id="tab-stable">Stable Operations</a></li>
-            <li><a href="javascript:void(0);" id="tab-efficient">Efficient Operations</a></li>
-            <li><a href="javascript:void(0);" id="tab-predictive">Predictive Operations</a></li>
-            <li><a href="javascript:void(0);" id="tab-future">Future-Ready Operations</a></li>
+            <li role="presentation">
+              <a href="javascript:void(0);" id="ioj-link-journey" class="ioj-nav-link active" role="tab" aria-controls="the journey" aria-selected="true" data-target="#ioj-tab-journey">The Journey</a>
+            </li>
+            <li role="presentation">
+              <a href="javascript:void(0);" id="ioj-link-stable" class="ioj-nav-link" role="tab" aria-controls="stable operations" aria-selected="false" data-target="#ioj-tab-stable">Stable Operations</a>
+            </li>
+            <li role="presentation">
+              <a href="javascript:void(0);" id="ioj-link-efficient" class="ioj-nav-link" role="tab" aria-controls="efficient operations" aria-selected="false" data-target="#ioj-tab-efficient">Efficient Operations</a>
+            </li>
+            <li role="presentation">
+              <a href="javascript:void(0);" id="ioj-link-predictive" class="ioj-nav-link" role="tab" aria-controls="predictive operations" aria-selected="false" data-target="#ioj-tab-predictive">Predictive Operations</a>
+            </li>
+            <li role="presentation">
+              <a href="javascript:void(0);" id="ioj-link-future" class="ioj-nav-link" role="tab" aria-controls="future ready operations" aria-selected="false" data-target="#ioj-tab-future">Future-Ready Operations</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="ioj-nav ioj-nav--mobile">
+          <ul role="tablist">
+            <li role="presentation">
+              <a href="javascript:void(0);" class="ioj-nav-link active" role="tab" aria-controls="stable" aria-selected="true" data-target="#ioj-tab-stable">Stable</a>
+            </li>
+            <li role="presentation">
+              <a href="javascript:void(0);" class="ioj-nav-link" role="tab" aria-controls="efficient" aria-selected="false" data-target="#ioj-tab-efficient">Efficient</a>
+            </li>
+            <li role="presentation">
+              <a href="javascript:void(0);" class="ioj-nav-link" role="tab" aria-controls="predictive" aria-selected="false" data-target="#ioj-tab-predictive">Predictive</a>
+            </li>
+            <li role="presentation">
+              <a href="javascript:void(0);" class="ioj-nav-link" role="tab" aria-controls="future" aria-selected="false" data-target="#ioj-tab-future">Future-ready</a>
+            </li>
           </ul>
         </nav>
         <div class="ioj-carousel-content">
           <!-- First Slide -->
-          <div class="ioj-carousel-slide ioj-journey">
+          <div class="ioj-carousel-slide ioj-journey ioj-carousel-slide--journey" id="ioj-tab-journey" role="tabpanel" aria-labelledby="ioj-link-journey">
             <!-- Stable Operations Image -->
-            <div class="ioj-journey-slide-part ioj-journey-stable">
+            <div class="ioj-journey-stable">
               <!--<img src="img/main_stable_off_v3.svg" alt="" class="ioj-journey-slide__image-off">
               <img src="img/main_stable_on.svg" alt="" class="ioj-journey-slide__image-on">-->
               <?xml version="1.0" encoding="utf-8"?>
@@ -814,17 +841,17 @@
               </div> -->
             </div>
             <!-- Efficient Operations Image -->
-            <div class="ioj-journey-slide-part ioj-journey-efficient">
+            <div class="ioj-journey-efficient">
               <img src="img/main_efficient_off_v3.svg" alt="Efficient Operations" class="ioj-journey-slide__image-off">
               <img src="img/main_efficient_on.svg" alt="Efficient Operations" class="ioj-journey-slide__image-on">
             </div>
             <!-- Predictive Operations Image -->
-            <div class="ioj-journey-slide-part ioj-journey-predictive">
+            <div class="ioj-journey-predictive">
               <img src="img/main_predictive_off2_v3.svg" alt="Predictive Operations" class="ioj-journey-slide__image-off">
               <img src="img/main_predictive_on.svg" alt="Predictive Operations" class="ioj-journey-slide__image-on">
             </div>
             <!-- Future Ready Operations Image -->
-            <div class="ioj-journey-slide-part ioj-journey-future">
+            <div class="ioj-journey-future">
               <img src="img/main_future_off2_v3.svg" alt="Future Ready Operations" class="ioj-journey-slide__image-off">
               <img src="img/main_future_on_v3.svg" alt="Future Ready Operations" class="ioj-journey-slide__image-on">
             </div>
@@ -1016,525 +1043,279 @@
           </div>
 
           <!--Second Slide-->
-          <div class="ioj-carousel-slide ioj-stable-operations" style="display: none;">
-            <div class="ioj-journey-slide-part ioj-operations-title">
-              <h2>Stable Operations</h2>
-            </div>
-            <div class="ioj-journey-slide-part ioj-operations-subtitle">
-              <span>Assess disconnected legacy systems, map and connect processes and sources of data—for incremental performance improvements.</span>
-            </div>
-            <div class="ioj-journey-slide-part ioj-operations-outcomes">
-              <span>OUTCOMES: Increased Compliance, Cost Savings</span>
-            </div>
-            <div class="ioj-journey-slide-part ioj-operation-images">
-              <div class="image-row">
-                <div class="image-column">
-                  <div class="ioj-icon-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 38.88 36.8">
-                      <use href="defs.svg#ioj-talent-icon"></use>
-                    </svg>
+          <div class="ioj-carousel-slide ioj-stable-operations ioj-carousel-slide--stable" id="ioj-tab-stable" role="tabpanel" aria-labelledby="ioj-link-stable">
+            <div class="ioj-carousel-slide__content">
+              <h2 class="ioj-operations-title">Stable Operations</h2>
+              <div class="ioj-operations-description">
+                Assess disconnected legacy systems, map and connect processes and sources of data—for incremental performance improvements.
+              </div>
+              <div class="ioj-operations-outcomes">
+                <span>OUTCOMES: Increased Compliance, Cost Savings</span>
+              </div>
+              <a href="javascript:void(0);" class="ioj-operations-more-link">More about Stable Operations</a>
+              <div class="ioj-operations-details">
+                <div class="ioj-operations-image-block">
+                  <div>
+                    <div class="ioj-operations-image">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 38.88 36.8">
+                        <use href="defs.svg#ioj-talent-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="ioj-operation-image-title">Talent</div>
                   </div>
-                  <div class="ioj-operation-image-text">Talent</div>
-                  <div class="ioj-operation-image-details">
+                  <div class="ioj-operation-image-description">
                     <ul>
                       <li>Manual, human-only workforce—performing transactional work.</li>
                       <li><strong>Primary workforce:</strong> operators and business excellence experts.</li>
                     </ul>
                   </div>
                 </div>
-                <div class="image-column">
-                  <div class="ioj-icon-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.1 36.1">
-                      <use href="defs.svg#ioj-tech-icon"></use>
-                    </svg>
+                <div class="ioj-operations-image-block">
+                  <div>
+                    <div class="ioj-operations-image">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.1 36.1">
+                        <use href="defs.svg#ioj-tech-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="ioj-operation-image-title">Tech</div>
                   </div>
-                  <div class="ioj-operation-image-text">Tech</div>
-                  <div class="ioj-operation-image-details">
+                  <div class="ioj-operation-image-description">
                     Global Productivity Hub (GPH) tracks every task, and measures how well the team is performing, and who has time to dedicate to other things.
                   </div>
                 </div>
-                <div class="image-column">
-                  <div class="ioj-icon-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 37 37">
-                      <use href="defs.svg#ioj-data-icon"></use>
-                    </svg>
+                <div class="ioj-operations-image-block">
+                  <div>
+                    <div class="ioj-operations-image">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 37 37">
+                        <use href="defs.svg#ioj-data-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="ioj-operation-image-title">Data</div>
                   </div>
-                  <div class="ioj-operation-image-text">Data</div>
-                  <div class="ioj-operation-image-details">
+                  <div class="ioj-operation-image-description">
                     Siloed or incomplete data sources unable to gain strategic insights or extract meaningful value.
                   </div>
                 </div>
-              </div>               
-              
-              
+                <a href="javascript:void(0);" class="ioj-operations-back-link">Back</a>
+              </div>
             </div>
-            <img src="img/page_1_stable.svg" class="ioj-operations-main-image">
           </div>
 
           <!--Third Slide-->
-          <div class="ioj-carousel-slide ioj-efficient-operations" style="display: none;">
-            <div class="ioj-journey-slide-part ioj-operations-title">
-              <h2>Efficient Operations</h2>
-            </div>
-            <div class="ioj-journey-slide-part ioj-operations-subtitle">
-              <span>Automate at scale to shift manual and transactional work to technology for improved productivity and efficiency and move talent to more meaningful work.</span>
-            </div>
-            <div class="ioj-journey-slide-part ioj-operations-outcomes">
-              <span>OUTCOMES: Productivity & Efficiency Gains, Quality Improvements, Customer Satisfaction Boost</span>
-            </div>
-            <div class="ioj-journey-slide-part ioj-operation-images">
-              <div class="image-row">
-                <div class="image-column">
-                  <div class="ioj-icon-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 38.88 36.8">
-                      <use href="defs.svg#ioj-talent-icon"></use>
-                    </svg>
+          <div class="ioj-carousel-slide ioj-efficient-operations ioj-carousel-slide--efficient" id="ioj-tab-efficient" role="tabpanel" aria-labelledby="ioj-link-efficient">
+            <div class="ioj-carousel-slide__content">
+              <h2 class="ioj-operations-title">Efficient Operations</h2>
+              <div class="ioj-operations-description">
+                Automate at scale to shift manual and transactional work to technology for improved productivity and efficiency and move talent to more meaningful work.
+              </div>
+              <div class="ioj-operations-outcomes">
+                <span>OUTCOMES: Productivity & Efficiency Gains, Quality Improvements, Customer Satisfaction Boost</span>
+              </div>
+              <a href="javascript:void(0);" class="ioj-operations-more-link">More about Efficient Operations</a>
+              <div class="ioj-operations-details">
+                <div class="ioj-operations-image-block">
+                  <div>
+                    <div class="ioj-operations-image">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 38.88 36.8">
+                        <use href="defs.svg#ioj-talent-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="ioj-operation-image-title">Talent</div>
                   </div>
-                  <div class="ioj-operation-image-text">Talent</div>
-                  <div class="ioj-operation-image-details">
+                  <div class="ioj-operation-image-description">
                     <ul>
                       <li>Machines augment humans for select processes.</li>
                       <li><strong>Workforce:</strong> specialized technology and process experts.</li>
                     </ul>
                   </div>
                 </div>
-                <div class="image-column">
-                  <div class="ioj-icon-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.1 36.1">
-                      <use href="defs.svg#ioj-tech-icon"></use>
-                    </svg>
+                <div class="ioj-operations-image-block">
+                  <div>
+                    <div class="ioj-operations-image">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.1 36.1">
+                        <use href="defs.svg#ioj-tech-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="ioj-operation-image-title">Tech</div>
                   </div>
-                  <div class="ioj-operation-image-text">Tech</div>
-                  <div class="ioj-operation-image-details">
+                  <div class="ioj-operation-image-description">
                     <ul>
                       <li>Automation Identification Diagnostic Tool (AIDT) desktop app analyses tasks, helps identify transactional work, and creates an optimized process blueprint.</li>
                       <li>Robotic automation with workflow capabilities.</li>
                     </ul>
                   </div>
                 </div>
-                <div class="image-column">
-                  <div class="ioj-icon-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 37 37">
-                      <use href="defs.svg#ioj-data-icon"></use>
-                    </svg>
+                <div class="ioj-operations-image-block">
+                  <div>
+                    <div class="ioj-operations-image">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 37 37">
+                        <use href="defs.svg#ioj-data-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="ioj-operation-image-title">Data</div>
                   </div>
-                  <div class="ioj-operation-image-text">Data</div>
-                  <div class="ioj-operation-image-details">
+                  <div class="ioj-operation-image-description">
                     Aggregated data at organization level, unable to blend data to generates forward-thinking insights.
                   </div>
                 </div>
-              </div> 
-              
+                <a href="javascript:void(0);" class="ioj-operations-back-link">Back</a>
+              </div>
             </div>
-            <img src="img/page_2_efficient.svg" class="ioj-operations-main-image">
           </div>
 
           <!--Fourth Slide-->
-          <div class="ioj-carousel-slide ioj-predictive-operations" style="display: none;">
-            <div class="ioj-journey-slide-part ioj-operations-title">
-              <h2>Predictive Operations</h2>
-            </div>
-            <div class="ioj-journey-slide-part ioj-operations-subtitle">
-              <span>Apply industry and functional leading practices, and leverage analytics to drive insights from blended data within the organization—to improve decision making, enhance experiences and improve business outcomes.</span>
-            </div>
-            <div class="ioj-journey-slide-part ioj-operations-outcomes">
-              <span>OUTCOMES: Procurement Spend Reduction, Reduced Inventory, Stakeholder Experience Enhanced</span>
-            </div>
-            <div class="ioj-journey-slide-part ioj-operation-images">
-              <div class="image-row">
-                <div class="image-column">
-                  <div class="ioj-icon-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 38.88 36.8">
-                      <use href="defs.svg#ioj-talent-icon"></use>
-                    </svg>
+          <div class="ioj-carousel-slide ioj-predictive-operations ioj-carousel-slide--predictive" id="ioj-tab-predictive" role="tabpanel" aria-labelledby="ioj-link-predictive">
+            <div class="ioj-carousel-slide__content">
+              <h2 class="ioj-operations-title">Predictive Operations</h2>
+              <div class="ioj-operations-description">
+                Apply industry and functional leading practices, and leverage analytics to drive insights from blended data within the organization—to improve decision making, enhance experiences and improve business outcomes.
+              </div>
+              <div class="ioj-operations-outcomes">
+                <span>OUTCOMES: Procurement Spend Reduction, Reduced Inventory, Stakeholder Experience Enhanced</span>
+              </div>
+              <a href="javascript:void(0);" class="ioj-operations-more-link">More about Predictive Operations</a>
+              <div class="ioj-operations-details">
+                <div class="ioj-operations-image-block">
+                  <div>
+                    <div class="ioj-operations-image">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 38.88 36.8">
+                        <use href="defs.svg#ioj-talent-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="ioj-operation-image-title">Talent</div>
                   </div>
-                  <div class="ioj-operation-image-text">Talent</div>
-                  <div class="ioj-operation-image-details">
+                  <div class="ioj-operation-image-description">
                     <ul>
                       <li>Machines augment humans for select processes.</li>
                       <li><strong>Multi-disciplinary workforce:</strong> includes analytics experts and business advisors.</li>
                     </ul>
                   </div>
                 </div>
-                <div class="image-column">
-                  <div class="ioj-icon-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.1 36.1">
-                      <use href="defs.svg#ioj-tech-icon"></use>
-                    </svg>
+                <div class="ioj-operations-image-block">
+                  <div>
+                    <div class="ioj-operations-image">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.1 36.1">
+                        <use href="defs.svg#ioj-tech-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="ioj-operation-image-title">Tech</div>
                   </div>
-                  <div class="ioj-operation-image-text">Tech</div>
-                  <div class="ioj-operation-image-details">
+                  <div class="ioj-operation-image-description">
                     <ul>
                       <li><strong>Agile Workforce Platform:</strong> Crowdsourcing tool that matches project needs and niche skills from various talent sources.</li>
                       <li><strong>Advanced Data Science:</strong> Accenture Insights Platform (AIP+), over 500 analytics tools that convert financial data into insights.</li>
                     </ul>
                   </div>
                 </div>
-                <div class="image-column">
-                  <div class="ioj-icon-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 37 37">
-                      <use href="defs.svg#ioj-data-icon"></use>
-                    </svg>
+                <div class="ioj-operations-image-block">
+                  <div>
+                    <div class="ioj-operations-image">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 37 37">
+                        <use href="defs.svg#ioj-data-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="ioj-operation-image-title">Data</div>
                   </div>
-                  <div class="ioj-operation-image-text">Data</div>
-                  <div class="ioj-operation-image-details">
+                  <div class="ioj-operation-image-description">
                     Apply analytics to drive data insights using blended data from former siloes within their organization (as well as data from partners) to anticipate and position for market shifts.
                   </div>
                 </div>
+                <a href="javascript:void(0);" class="ioj-operations-back-link">Back</a>
+              </div>
 
-              </div> 
-              
+              <div class="ioj-image-animations">
+                <img src="img/predictive_scene1.svg" class="ioj-operations-scene-image">
+                <img src="img/predictive_scene2.svg" class="ioj-operations-scene-image">
+                <img src="img/predictive_scene3.svg" class="ioj-operations-scene-image">
+                <img src="img/predictive_scene4.svg" class="ioj-operations-scene-image">
+              </div>
             </div>
-            <img src="img/page_3_predictive.svg" class="ioj-operations-main-image">
-            <div>
-              <img src="img/predictive_scene1.svg" class="ioj-operations-scene-image">
-              <img src="img/predictive_scene2.svg" class="ioj-operations-scene-image">
-              <img src="img/predictive_scene3.svg" class="ioj-operations-scene-image">
-              <img src="img/predictive_scene4.svg" class="ioj-operations-scene-image">
-            </div>
+
           </div>
 
           <!--Fifth Slide-->
-          <div class="ioj-carousel-slide ioj-future-operations" style="display: none;">
-            <div class="ioj-journey-slide-part ioj-operations-title">
-              <h2>Future-Ready Operations</h2>
-            </div>
-            <div class="ioj-journey-slide-part ioj-operations-subtitle">
-              <span>Intelligent operations run end-to-end digitized processes; continually mobilize specialized talent, innovative technology, and diverse data on demand, realizing stronger performance gains and overall value.</span>
-            </div>
-            <div class="ioj-journey-slide-part ioj-operations-outcomes">
-              <span>OUTCOMES: Highest Employee Satisfaction, 1st Quartile Customer Experience, Enhanced Stakeholder Outcomes</span>
-            </div>
-            <div class="ioj-journey-slide-part ioj-operation-images">
-              <div class="image-row">
-                <div class="image-column">
-                  <div class="ioj-icon-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 38.88 36.8">
-                      <use href="defs.svg#ioj-talent-icon"></use>
-                    </svg>
+          <div class="ioj-carousel-slide ioj-future-operations ioj-carousel-slide--future" id="ioj-tab-future" role="tabpanel" aria-labelledby="ioj-link-future">
+            <div class="ioj-carousel-slide__content">
+              <h2 class="ioj-operations-title">Future-Ready Operations</h2>
+              <div class="ioj-operations-description">
+                Intelligent operations run end-to-end digitized processes; continually mobilize specialized talent, innovative technology, and diverse data on demand, realizing stronger performance gains and overall value.
+              </div>
+              <div class="ioj-operations-outcomes">
+                <span>OUTCOMES: Highest Employee Satisfaction, 1st Quartile Customer Experience, Enhanced Stakeholder Outcomes</span>
+              </div>
+              <a href="javascript:void(0);" class="ioj-operations-more-link">More about Future-Ready Operations</a>
+              <div class="ioj-operations-details">
+                <div class="ioj-operations-image-block">
+                  <div>
+                    <div class="ioj-operations-image">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 38.88 36.8">
+                        <use href="defs.svg#ioj-talent-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="ioj-operation-image-title">Talent</div>
                   </div>
-                  <div class="ioj-operation-image-text">Talent</div>
-                  <div class="ioj-operation-image-details">
+                  <div class="ioj-operation-image-description">
                     <ul>
                       <li><b>Real-time Agile Workforce On-demand:</b> Collaborative workforce, ability to mobilize specialized talent when needed.</li>
                       <li><strong>Specialized talent:</strong> Knowledge workers focused on judgement-based work, data scientists and innovation leads.</li>
                     </ul>
                   </div>
                 </div>
-                <div class="image-column">
-                  <div class="ioj-icon-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.1 36.1">
-                      <use href="defs.svg#ioj-tech-icon"></use>
-                    </svg>
+                <div class="ioj-operations-image-block">
+                  <div>
+                    <div class="ioj-operations-image">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.1 36.1">
+                        <use href="defs.svg#ioj-tech-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="ioj-operation-image-title">Tech</div>
                   </div>
-                  <div class="ioj-operation-image-text">Tech</div>
-                  <div class="ioj-operation-image-details">
+                  <div class="ioj-operation-image-description">
                     <ul>
                       <li>AI, cloud and blockchain enabled.</li>
                       <li>Intelligent Automation Platform draws on 2,000+ AI agents and automation bots, analytics apps to drive efficiency and consolidate data.</li>
                     </ul>
                   </div>
                 </div>
-                <div class="image-column">
-                  <div class="ioj-icon-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 37 37">
-                      <use href="defs.svg#ioj-data-icon"></use>
-                    </svg>
+                <div class="ioj-operations-image-block">
+                  <div>
+                    <div class="ioj-operations-image">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 37 37">
+                        <use href="defs.svg#ioj-data-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="ioj-operation-image-title">Data</div>
                   </div>
-                  <div class="ioj-operation-image-text">Data</div>
-                  <div class="ioj-operation-image-details">
+                  <div class="ioj-operation-image-description">
                     Harness insights from a diverse portfolio of sources—using advanced analytics and AI capabilities—to power predictive decisions and improve decision making.
                   </div>
                 </div>
-              </div> 
-
+                <a href="javascript:void(0);" class="ioj-operations-back-link">Back</a>
+              </div>
               <div class="hover-icons">
                 <div class="future-hover1" tabindex="0">
                   <img src="./img/main_future_hover1.svg" alt="" />
-                </div>           
-  
+                </div>
+
                 <div class="future-hover2" tabindex="0">
                   <img src="./img/main_future_hover2.svg" alt="" />
                 </div>
-  
+
                 <div class="future-hover3" tabindex="0">
                   <img src="./img/main_future_hover3.svg" alt="" />
                 </div>
-  
+
                 <div class="future-hover4" tabindex="0">
                   <img src="./img/main_future_hover4.svg" alt="" />
                 </div>
               </div>
-
             </div>
-            <img src="img/page_4_futureready_withbubbles.svg" class="ioj-operations-main-image">
           </div>
 
         </div>
       </div>
     </section>
   </div>
-
-  <div class="ioj-carousel-mobile">
-    <nav class="ioj-nav-mobile">
-      <ul>
-        <li class="active"><a href="javascript:void(0);" id="tab-stable-mobile">Stable</a></li>
-        <li><a href="javascript:void(0);" id="tab-efficient-mobile">Efficient</a></li>
-        <li><a href="javascript:void(0);" id="tab-predictive-mobile">Predictive</a></li>
-        <li><a href="javascript:void(0);" id="tab-future-mobile">Future-ready</a></li>
-      </ul>
-    </nav>
-    <div class="ioj-carousel-content-mobile">
-        <!--First Slide Mobile-->
-        <div class="ioj-carousel-slide-mobile ioj-stable-operations-mobile">
-          <div class="ioj-slide-title-mobile">Stable Operations</div>
-          <div class="ioj-left">
-            <div class="ioj-journey-slide-part ioj-operations-subtitle">
-              <span>Assess disconnected legacy systems, map and connect processes and sources of data—for incremental performance improvements.</span>
-            </div>
-            <a href="javascript:void(0);" class="more">More about Stable Operations</a>
-            <!--<img src="img/mobile_stable.svg" class="ioj-operations-main-image">-->
-          </div>
-
-          <div class="ioj-journey-slide-part ioj-operation-images" style="display: none;">
-            <div class="image-row">
-              <div class="image-column clearfix">
-                <div class="image-block">
-                  <div class="ioj-mobile-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 38.88 36.8">
-                      <use href="defs.svg#ioj-talent-icon"></use>
-                    </svg>
-                  </div>
-                  <div class="ioj-operation-image-text">Talent</div>
-                </div>
-                <div class="ioj-operation-image-details">
-                  <ul>
-                    <li>Manual, human-only workforce—performing transactional work.</li>
-                    <li>Primary workforce: operators and business excellence experts.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="image-column clearfix">
-                <div class="image-block">
-                  <div class="ioj-mobile-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 38.88 36.8">
-                      <use href="defs.svg#ioj-tech-icon"></use>
-                    </svg>
-                  </div>
-                  <div class="ioj-operation-image-text">Tech</div>
-                </div>
-                <div class="ioj-operation-image-details">
-                  Global Productivity Hub (GPH) tracks every task, and measures how well the team is performing, and who has time to dedicate to other things.
-                </div>
-              </div>
-              <div class="image-column clearfix">
-                <div class="image-block">
-                  <div class="ioj-mobile-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 38.88 36.8">
-                      <use href="defs.svg#ioj-data-icon"></use>
-                    </svg>
-                  </div>
-                  <div class="ioj-operation-image-text">Data</div>
-                </div>
-                <div class="ioj-operation-image-details">
-                  Siloed or incomplete data sources unable to gain strategic insights or extract meaningful value.
-                </div>
-              </div>
-            </div>
-            <a href="javascript:void(0);" class="back">Back</a>             
-          </div>
-        </div>
-
-      <!--Second Slide Mobile-->
-      <div class="ioj-carousel-slide-mobile ioj-efficient-operations-mobile" style="display: none;">
-        <div class="ioj-slide-title-mobile">Efficient Operations</div>
-        <div class="ioj-left">
-          <div class="ioj-journey-slide-part ioj-operations-subtitle">
-            <span>Automate at scale to shift manual and transactional work to technology for improved productivity and efficiency and move talent to more meaningful work.</span>
-          </div>
-          <a href="javascript:void(0);" class="more">More about Efficient Operations</a>
-          <!--<img src="img/mobile_efficient.svg" class="ioj-operations-main-image">-->
-        </div>
-        <div class="ioj-journey-slide-part ioj-operation-images" style="display: none;">
-          <div class="image-row">
-            <div class="image-column">
-              <div class="image-block">
-                <div class="ioj-mobile-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 38.88 36.8">
-                    <use href="defs.svg#ioj-talent-icon"></use>
-                  </svg>
-                </div>
-                <div class="ioj-operation-image-text">Talent</div>
-              </div>
-              <div class="ioj-operation-image-details">
-                <ul>
-                  <li>Machines augment humans for select processes.</li>
-                  <li>Workforce: specialized technology and process experts.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="image-column">
-              <div class="image-block">
-                <div class="ioj-mobile-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 38.88 36.8">
-                    <use href="defs.svg#ioj-tech-icon"></use>
-                  </svg>
-                </div>
-                <div class="ioj-operation-image-text">Tech</div>
-              </div>
-              <div class="ioj-operation-image-details">
-                <ul>
-                  <li>Automation Identification Diagnostic Tool (AIDT) desktop app analyses tasks, helps identify transactional work, and creates an optimized process blueprint.</li>
-                  <li>Robotic automation with workflow capabilities</li>
-                </ul>
-              </div>
-            </div>
-            <div class="image-column">
-              <div class="image-block">
-                <div class="ioj-mobile-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 38.88 36.8">
-                    <use href="defs.svg#ioj-data-icon"></use>
-                  </svg>
-                </div>
-                <div class="ioj-operation-image-text">Data</div>
-              </div>
-              <div class="ioj-operation-image-details">
-                Aggregated data at organization level, unable to blend data to generates forward-thinking insights.
-              </div>
-            </div>
-          </div> 
-          <a href="javascript:void(0);" class="back">Back</a>             
-          
-        </div>
-      </div>
-
-      <!--Third Slide Mobile-->
-      <div class="ioj-carousel-slide-mobile ioj-predictive-operations-mobile" style="display: none;">
-        <div class="ioj-slide-title-mobile">Predictive Operations</div>
-        <div class="ioj-left">
-          <div class="ioj-journey-slide-part ioj-operations-subtitle">
-            <span>Apply industry and functional leading practices, and leverage analytics to drive insights from blended data within the organization—to improve decision making, enhance experiences and improve business outcomes.</span>
-          </div>
-          <a href="javascript:void(0);" class="more">More about Predictive Operations</a>
-          <!--<img src="img/mobile_predictive_v2.svg" class="ioj-operations-main-image">-->
-        </div>
-        <div class="ioj-journey-slide-part ioj-operation-images" style="display: none;">
-          <div class="image-row">
-            <div class="image-column">
-              <div class="image-block">
-                <div class="ioj-mobile-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 38.88 36.8">
-                    <use href="defs.svg#ioj-talent-icon"></use>
-                  </svg>
-                </div>
-                <div class="ioj-operation-image-text">Talent</div>
-              </div>
-              <div class="ioj-operation-image-details">
-                <ul>
-                  <li>Machines augment humans for select processes.</li>
-                  <li>Workforce: specialized technology and process experts.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="image-column">
-              <div class="image-block">
-                <div class="ioj-mobile-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 38.88 36.8">
-                    <use href="defs.svg#ioj-tech-icon"></use>
-                  </svg>
-                </div>
-                <div class="ioj-operation-image-text">Tech</div>
-              </div>
-              <div class="ioj-operation-image-details">
-                <ul>
-                  <li>Automation Identification Diagnostic Tool (AIDT) desktop app analyses tasks, helps identify transactional work, and creates an optimized process blueprint.</li>
-                  <li>Robotic automation with workflow capabilities</li>
-                </ul>
-              </div>
-            </div>
-            <div class="image-column">
-              <div class="image-block">
-                <div class="ioj-mobile-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 38.88 36.8">
-                    <use href="defs.svg#ioj-data-icon"></use>
-                  </svg>
-                </div>
-                <div class="ioj-operation-image-text">Data</div>
-              </div>
-              <div class="ioj-operation-image-details">
-                Aggregated data at organization level, unable to blend data to generates forward-thinking insights.
-              </div>
-            </div>
-          </div> 
-          <a href="javascript:void(0);" class="back">Back</a>
-        </div>
-      </div>
-
-      <!--Fourth Slide Mobile-->
-      <div class="ioj-carousel-slide-mobile ioj-future-operations-mobile" style="display: none;">
-        <div class="ioj-slide-title-mobile">Future-ready Operations</div>
-        <div class="ioj-left">
-          <div class="ioj-journey-slide-part ioj-operations-subtitle">
-            <span>Intelligent operations run end-to-end digitized processes; continually mobilize specialized talent, innovative technology, and diverse data on demand, realizing stronger performance gains and overall value.</span>
-          </div>
-          <a href="javascript:void(0);" class="more">More about Future-ready Operations</a>
-          <!--<img src="img/mobile_future.svg" class="ioj-operations-main-image">-->
-        </div>
-        <div class="ioj-journey-slide-part ioj-operation-images" style="display: none;">
-          <div class="image-row">
-            <div class="image-column">
-              <div class="image-block">
-                <div class="ioj-mobile-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 38.88 36.8">
-                    <use href="defs.svg#ioj-talent-icon"></use>
-                  </svg>
-                </div>
-                <div class="ioj-operation-image-text">Talent</div>
-              </div>
-              <div class="ioj-operation-image-details">
-                <ul>
-                  <li><b>Real-time Agile Workforce On-demand:</b> Collaborative workforce, ability to mobilize specialized talent (tapping ecosystem partners) when needed.</li>
-                  <li>Specialized talent: Knowledge workers focused on judgement-based work, data scientists and innovation leads.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="image-column">
-              <div class="image-block">
-                <div class="ioj-mobile-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 38.88 36.8">
-                    <use href="defs.svg#ioj-tech-icon"></use>
-                  </svg>
-                </div>
-                <div class="ioj-operation-image-text">Tech</div>
-              </div>
-              <div class="ioj-operation-image-details">
-                <ul>
-                  <li>AI, cloud and blockchain enabled.</li>
-                  <li>Intelligent Automation Platformdraws on 2,000+ AI agents and automation bots, analytics apps to drive efficiency and consolidate data.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="image-column">
-              <div class="image-block">
-                <div class="ioj-mobile-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 38.88 36.8">
-                    <use href="defs.svg#ioj-data-icon"></use>
-                  </svg>
-                </div>
-                <div class="ioj-operation-image-text">Data</div>
-              </div>
-              <div class="ioj-operation-image-details">
-                Harness insights from a diverse portfolio of sources—using advanced analytics and AI capabilities—to power predictive decisions and improve decision making.
-              </div>
-            </div>
-          </div> 
-          <a href="javascript:void(0);" class="back">Back</a>             
-          
-        </div>
-      </div>
-    </div>
-  </div>
-
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>

@@ -1,3 +1,4 @@
+/*
 const navMobile = document.querySelector('.ioj-nav-mobile');
 
 const stableBlockMobile = document.getElementsByClassName("ioj-stable-operations-mobile")[0];
@@ -76,4 +77,4 @@ futureBackLink.addEventListener("click", event => {
     futureMoreBlock.style.display = "block";
     futureBackBlock.style.display = "none";
     futureBlockMobile.classList.remove("ioj-mobile-modal")
-});
+});*/
