@@ -1,6 +1,6 @@
 /* Desktop first */
 .ioj-carousel {
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .ioj-nav {
@@ -325,6 +325,12 @@
     margin-top: 0;
     padding: 30px;
     background-color: #fff;
+  }
+
+  .ioj-carousel-slide--efficient .ioj-operations-details,
+  .ioj-carousel-slide--predictive .ioj-operations-details,
+  .ioj-carousel-slide--future .ioj-operations-details {
+    margin-top: 0;
   }
 
   .ioj-operations-image-block {

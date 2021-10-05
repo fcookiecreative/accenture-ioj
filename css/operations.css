@@ -20,7 +20,7 @@
   animation: gradient 8s ease infinite;
   z-index: 2;
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .ioj-future-operations {
   background: linear-gradient(90deg, #9500bd, #b72e9e, #d95d7d, #fb8c5b);

@@ -28,15 +28,21 @@
   z-index: 6;
 }
 
-/*.future-hover1 svg {
-  opacity: 0;
-  transition: opacity 1s ease-out;
-}*/
-
-.future-hover1 img {
+.ioj-future-hover img {
   width: 100%;
   opacity: 0;
   transition: opacity 0.5s ease-out;
+}
+
+.ioj-future-hover:hover img,
+.ioj-future-hover:focus img {
+  opacity: 1;
+}
+
+.ioj-future-hover:focus {
+  outline: none;
+  box-shadow: none;
+  transform: scale(1.1);
 }
 
 .future-bubble1 img {
@@ -55,26 +61,6 @@
   position: relative;
 }
 
-/*.future-hover1:hover,
-.future-hover1:focus {
-  border-radius: 50%;
-  background-image: linear-gradient(-90deg, #3d026e 0%, #aa02bc 100%);
-}*/
-
-/*.future-hover1:hover svg,
-.future-hover1:focus svg {
-  opacity: 1;
-}*/
-.future-hover1:hover img,
-.future-hover1:focus img {
-  opacity: 1;
-}
-.future-hover1:focus {
-  outline: none;
-  box-shadow: none;
-  transform: scale(1.1);
-}
-
 .future-hover2 {
   z-index: 7;
   position: absolute;
@@ -82,21 +68,6 @@
   left: 378px;
   width: 130px;
   height: 130px;
-}
-
-.future-hover2 img {
-  width: 100%;
-  display: none;
-}
-
-.future-hover2:hover img,
-.future-hover2:focus img {
-  display: block;
-}
-.future-hover2:focus {
-  outline: none;
-  box-shadow: none;
-  transform: scale(1.1);
 }
 
 .future-hover3 {
@@ -108,21 +79,6 @@
   height: 130px;
 }
 
-.future-hover3 img {
-  width: 100%;
-  display: none;
-}
-
-.future-hover3:hover img,
-.future-hover3:focus img {
-  display: block;
-}
-.future-hover3:focus {
-  outline: none;
-  box-shadow: none;
-  transform: scale(1.1);
-}
-
 .future-hover4 {
   z-index: 7;
   position: absolute;
@@ -130,21 +86,6 @@
   left: 757px;
   width: 130px;
   height: 130px;
-}
-
-.future-hover4 img {
-  width: 100%;
-  display: none;
-}
-
-.future-hover4:hover img,
-.future-hover4:focus img {
-  display: block;
-}
-.future-hover4:focus {
-  outline: none;
-  box-shadow: none;
-  transform: scale(1.1);
 }
 
 .ioj-journey-slide__image-on,
@@ -165,5 +106,11 @@
   .ioj-title {
     font-size: 48px;
     line-height: 55px;
+  }
+}
+
+@media (max-width: 999px) {
+  .hover-icons {
+    display: none;
   }
 }
