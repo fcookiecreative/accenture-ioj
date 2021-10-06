@@ -66,19 +66,19 @@
   border-bottom: 2px solid transparent;
 }*/
 
-.ioj-nav > ul > li.active > a {
+/*.ioj-nav > ul > li.active > a {
   font-family: "Graphik Medium", "Arial Black", sans-serif;
 }
 
 .ioj-nav > ul > li:hover > a,
 .ioj-nav > ul > li.active > a {
   border-bottom: 2px solid #fff;
-}
+}*/
 
 /* added to try to remove jump on hover */
-.ioj-nav > ul > li.active > a {
+/*.ioj-nav > ul > li.active > a {
   bottom: 1;
-}
+}*/
 
 .ioj-carousel-content {
   background: linear-gradient(180deg, #1b7cd1 8%, #bfddf2 32.92%);

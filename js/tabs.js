@@ -1,6 +1,14 @@
 jQuery(document).ready(function () {
   const $carousel = jQuery('.ioj-carousel');
   const $mobileNavBar = jQuery('.ioj-nav--mobile');
+  const $desktopNavBar = jQuery('.ioj-nav--desktop');
+
+  const $journeyParts = jQuery('.ioj-journey-part');
+  /* JOURNEY PARTS CLICKS */
+  $journeyParts.on('click', function () {
+    const target = jQuery(this).data('target');
+    $desktopNavBar.find('.ioj-nav-link[data-target="' + target + '"]').trigger('click');
+  });
   /* NAV BUTTONS CLICKS */
   const $iojNavLinks = jQuery('.ioj-nav-link');
 
