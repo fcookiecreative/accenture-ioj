@@ -483,3 +483,14 @@
     line-height: 21px;
   }
 }
+
+@media (max-width: 320px) {
+  .ioj-carousel-slide__content {
+    height: 87vh;
+  }
+
+  .ioj-operations-more-link {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
