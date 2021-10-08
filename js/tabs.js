@@ -79,9 +79,9 @@ jQuery(document).ready(function () {
     $currentButtonHolder.addClass('active');
   });
 
-  /* Back buttons */
-  const $backButtons = jQuery('.ioj-operations-back-link');
-  $backButtons.click(function () {
+  /* Close buttons */
+  const $closeButtons = jQuery('.ioj-operations-close-button');
+  $closeButtons.click(function () {
     const $currentButton = jQuery(this);
     const $currentButtonHolder = $currentButton.closest('.ioj-carousel-slide__content');
     $mobileNavBar.css({opacity: 1});

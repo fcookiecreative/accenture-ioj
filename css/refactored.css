@@ -106,6 +106,10 @@
   color: #fff;
 }
 
+.ioj-operations-close-button {
+  display: none;
+}
+
 .ioj-operations-description {
   max-width: 71%;
   font-family: 'Graphik Regular', 'Arial Black', sans-serif;
@@ -204,10 +208,6 @@
   color: #fff;
 }
 
-.ioj-operations-back-link {
-  display: none;
-}
-
 /* Tablet and Mobile Styles */
 @media (max-width: 999px) {
   .ioj-nav--desktop {
@@ -279,6 +279,21 @@
     background-color: #1b7cd1;
     transition: top 0.4s ease-in;
     opacity: 0;
+  }
+
+  .ioj-carousel-slide__content.active .ioj-operations-close-button {
+    display: block;
+  }
+
+  .ioj-operations-close-button {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -37px;
+    right: 17px;
+    z-index: 7;
+    background-image: url('../img/icons/close.svg');
+    background-size: contain;
   }
 
   .ioj-carousel-slide__content.active .ioj-operations-title {
@@ -384,37 +399,6 @@
     display: flex;
   }
 
-  .ioj-operations-back-link {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    height: 20px;
-    bottom: 20px;
-    right: 20px;
-    font-weight: 500;
-    font-family: "Graphik Medium", "Arial Black", sans-serif;
-    font-size: 20px;
-    line-height: 17px;
-    color: #1b7cd1
-  }
-
-  .ioj-operations-back-link:before {
-    position: absolute;
-    top: 0;
-    left: -25px;
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-image: url('../img/icons/Arrow_Back.svg');
-    content: '';
-  }
-
-  .ioj-operations-back-link:hover,
-  .ioj-operations-back-link:focus,
-  .ioj-operations-back-link:active {
-    color: #1b7cd1
-  }
-
   .ioj-image-animations {
     display: none;
   }
@@ -480,7 +464,6 @@
     line-height: 20px;
   }
 
-  .ioj-operations-back-link,
   .ioj-operations-more-link {
     font-size: 14px;
     line-height: 17px;
