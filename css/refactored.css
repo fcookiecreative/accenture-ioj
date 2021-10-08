@@ -485,4 +485,8 @@
     font-size: 14px;
     line-height: 17px;
   }
+
+  .ioj-nav > ul > li > a:hover:after {
+    bottom: 7px;
+  }
 }
