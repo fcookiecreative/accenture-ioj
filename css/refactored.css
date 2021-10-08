@@ -458,14 +458,16 @@
     width: 21px;
     height: 21px;
   }
+}
 
+@media (hover: hover) and (max-width: 767px) {
   .ioj-nav > ul > li > a:hover:after {
     bottom: 7px;
   }
 }
 
 /* Mobile Only Styles */
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .ioj-operations-description {
     font-size: 14px;
     line-height: 22px;
