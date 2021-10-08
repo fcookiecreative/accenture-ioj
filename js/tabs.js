@@ -1,9 +1,29 @@
 jQuery(document).ready(function () {
+  let isDesktop = window.matchMedia('(min-width: 1000px)').matches;
   const $carousel = jQuery('.ioj-carousel');
   const $mobileNavBar = jQuery('.ioj-nav--mobile');
   const $desktopNavBar = jQuery('.ioj-nav--desktop');
-
   const $journeyParts = jQuery('.ioj-journey-part');
+
+
+  /* RESIZE STUFF */
+  jQuery(window).on('resize', function() {
+    if (!window.matchMedia('(min-width: 1000px)').matches && isDesktop) {
+     isDesktop = false;
+     const $currentTabLink = $desktopNavBar.find('.ioj-nav-link.active');
+     let currentTabTarget = $currentTabLink.data('target');
+     if (currentTabTarget === '#ioj-tab-journey') {
+       currentTabTarget = '#ioj-tab-stable'
+     }
+     $mobileNavBar.find('.ioj-nav-link[data-target="' + currentTabTarget + '"]').trigger('click');
+    }
+    if (window.matchMedia('(min-width: 1000px)').matches && !isDesktop) {
+      isDesktop = true;
+      const $currentTabLink = $mobileNavBar.find('.ioj-nav-link.active');
+      let currentTabTarget = $currentTabLink.data('target');
+      $desktopNavBar.find('.ioj-nav-link[data-target="' + currentTabTarget + '"]').trigger('click');
+    }
+  });
   /* JOURNEY PARTS CLICKS */
   $journeyParts.on('click', function () {
     const target = jQuery(this).data('target');
@@ -14,7 +34,7 @@ jQuery(document).ready(function () {
 
   let currentNavClass;
 
-  if (window.matchMedia('(min-width: 1000px)').matches) {
+  if (isDesktop) {
     currentNavClass = '.ioj-nav--desktop';
   } else {
     currentNavClass = '.ioj-nav--mobile';
