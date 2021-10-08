@@ -423,12 +423,6 @@
     padding: 20px 15px;
   }
 
-  .ioj-operations-description {
-    font-size: 14px;
-    line-height: 22px;
-    max-width: 100%;
-  }
-
   .ioj-carousel-slide--predictive .ioj-operations-description {
     max-width: 100%;
   }
@@ -465,10 +459,17 @@
     height: 21px;
   }
 
-  .ioj-operation-image-description,
-  .ioj-operation-image-description li {
-    font-size: 13px;
-    line-height: 21px;
+  .ioj-nav > ul > li > a:hover:after {
+    bottom: 7px;
+  }
+}
+
+/* Mobile Only Styles */
+@media (max-width: 480px) {
+  .ioj-operations-description {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 100%;
   }
 
   .ioj-operations-more-link {
@@ -476,7 +477,9 @@
     line-height: 17px;
   }
 
-  .ioj-nav > ul > li > a:hover:after {
-    bottom: 7px;
+  .ioj-operation-image-description,
+  .ioj-operation-image-description li {
+    font-size: 13px;
+    line-height: 21px;
   }
 }
