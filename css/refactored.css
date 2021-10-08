@@ -444,6 +444,13 @@
     top: -35px;
   }
 
+  .ioj-operations-close-button {
+    width: 16px;
+    height: 16px;
+    top: -27px;
+    right: 11px;
+  }
+
   .ioj-operations-details {
     padding: 20px 15px;
   }
