@@ -69,7 +69,7 @@
   height: 595px;
   padding: 30px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position: bottom right;
 }
 
