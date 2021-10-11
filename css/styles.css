@@ -363,7 +363,7 @@ strong {
   height: 35px;
   border-radius: 50%;
   text-align: center;
-  border: 1px transparent;
+  /*border: 1px transparent;*/
   background: rgb(255,75,255);
   background: -moz-linear-gradient(0deg, rgba(255,75,255,1) 0%, rgba(132,44,176,1) 100%);
   background: -webkit-linear-gradient(0deg, rgba(255,75,255,1) 0%, rgba(132,44,176,1) 100%);
@@ -374,6 +374,7 @@ strong {
 .tooltip-block .tooltip-icon-large {
   width: 49px;
   height: 49px;
+  padding: 8px;
 }
 
 .tooltip-block .tooltip-icon:hover {
@@ -382,7 +383,7 @@ strong {
   background: -webkit-linear-gradient(0deg, rgba(70,0,115,1) 0%, rgba(132,44,176,1) 100%);
   background: linear-gradient(0deg, rgba(70,0,115,1) 0%, rgba(132,44,176,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#460073",endColorstr="#842cb0",GradientType=1);
-  border: #FFFFFF 1px solid;
+  /*border: #FFFFFF 1px solid;*/
 }
 
 .tooltip-block .tooltip-icon-inactive {
@@ -640,10 +641,10 @@ strong {
   left: 92%;
 }
 
-.tooltip-block.tooltip-star .tooltip-icon svg {
+/*.tooltip-block.tooltip-star .tooltip-icon svg {
   position: relative;
   padding: 5px;
-}
+}*/
 
 .tooltip-block.tooltip-star .tooltip-text {
   width: 257px;
@@ -1420,7 +1421,7 @@ strong {
 }
 
 .ioj-operations-image-block.active .ioj-operations-image {
-  background-color: #1b7cd1;
+  background-image: linear-gradient(53.22deg, #1b7cd1 11.78%, #00baff 88.34%);
 }
 
 .ioj-operations-image-block.active .ioj-operations-image svg {
@@ -1637,7 +1638,7 @@ strong {
   }
 
   .ioj-operations-details .ioj-operations-image {
-    background-color: #1b7cd1;
+    background-image: linear-gradient(53.22deg, #1b7cd1 11.78%, #00baff 88.34%);
   }
 
   .ioj-operations-details .ioj-operations-image svg {
@@ -1686,6 +1687,13 @@ strong {
 
   .ioj-operations-description {
     max-width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .ioj-operations-more-link {
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .ioj-carousel-slide__content.active .ioj-operations-title {
@@ -1722,16 +1730,6 @@ strong {
 
 /* Mobile Only Styles */
 @media (max-width: 479px) {
-  .ioj-operations-description {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  .ioj-operations-more-link {
-    font-size: 14px;
-    line-height: 17px;
-  }
-
   .ioj-operation-image-description,
   .ioj-operation-image-description li {
     font-size: 13px;
