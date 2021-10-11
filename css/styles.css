@@ -383,7 +383,7 @@ strong {
   background: -webkit-linear-gradient(0deg, rgba(70,0,115,1) 0%, rgba(132,44,176,1) 100%);
   background: linear-gradient(0deg, rgba(70,0,115,1) 0%, rgba(132,44,176,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#460073",endColorstr="#842cb0",GradientType=1);
-  /*border: #FFFFFF 1px solid;*/
+  border: #fff 1px solid;
 }
 
 .tooltip-block .tooltip-icon-inactive {
