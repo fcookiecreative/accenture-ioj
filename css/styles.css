@@ -35,60 +35,10 @@
 .ioj-carousel {
   margin-top: 44px;
 }
-/*.ioj-nav {
-  border-bottom: 2px solid #ffffff;
-}
-
-.ioj-nav > ul {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 48px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: #1b7cd1;
-}
-
-.ioj-nav > ul > li {
-  padding: 0 30px;
-  display: flex;
-  align-items: center;
-}*/
-
-/*.ioj-nav > ul > li > a {
-  position: relative;
-  bottom: -2px;
-  font-size: 14px;
-  line-height: 16px;
-  font-family: "Graphik Medium", "Arial Black", sans-serif;
-  color: #fff;
-  border-bottom: 2px solid transparent;
-}*/
-
-/*.ioj-nav > ul > li.active > a {
-  font-family: "Graphik Medium", "Arial Black", sans-serif;
-}
-
-.ioj-nav > ul > li:hover > a,
-.ioj-nav > ul > li.active > a {
-  border-bottom: 2px solid #fff;
-}*/
-
-/* added to try to remove jump on hover */
-/*.ioj-nav > ul > li.active > a {
-  bottom: 1;
-}*/
 
 .ioj-carousel-content {
   background: linear-gradient(180deg, #1b7cd1 8%, #bfddf2 32.92%);
 }
-
-/*.ioj-carousel-slide {
-  position: relative;
-  height: 100%;
-  padding: 3%;
-}*/
 
 .ioj-carousel-slide.ioj-journey {
   padding: 0;
@@ -143,10 +93,6 @@
   width: 100%;
   height: 61.34%;
 }
-/*.ioj-journey-future img.ioj-journey-slide__image-off,
-.ioj-journey-future img.ioj-journey-slide__image-on {
-  width: 1002px;
-}*/
 
 .ioj-journey-synops {
   position: absolute;
