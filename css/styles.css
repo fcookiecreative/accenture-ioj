@@ -404,9 +404,10 @@ strong {
 
 .tooltip-block .tooltip-text {
   padding: 15px 30px;
+  font-weight: 400;
   font-size: 11px;
   line-height: 16px;
-  box-shadow: 0px 2px 6px #A7A7A7;
+  box-shadow: 0 2px 6px #a7a7a7;
   border-radius: 65px;
   background-color: #fff;
   position: absolute;
