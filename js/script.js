@@ -58,6 +58,7 @@ jQuery(function () {
   const $desktopNavBar = jQuery('.ioj-nav--desktop');
   const $journeyParts = jQuery('.ioj-journey-part');
   const $tooltipsHolder = jQuery('.ioj-tooltips');
+  const $bubblesButtons = jQuery('.ioj-future-hover');
 
   /* RESIZE STUFF */
   jQuery(window).on('resize', function() {
@@ -107,11 +108,18 @@ jQuery(function () {
     $tooltipsHolder.find(tooltipDataPart).find('.tooltip-icon').removeClass('tooltip-icon-inactive').addClass('active');
     $tooltipsHolder.find('[data-part]:not(' + tooltipDataPart + ')').find('.tooltip-icon').removeClass('active').addClass('tooltip-icon-inactive');
 
-
     if ($activeTooltip.data('part') !== '#ioj-part-future') {
       jQuery('.future-bubble1-off').css({display: 'block'});
     }
     jQuery($activeTooltip.data('part')).addClass('active');
+  });
+  /* FUTURE BUBBLES HOVER */
+  $bubblesButtons.on('mouseenter', function() {
+    $journeyParts.removeClass('active');
+    jQuery('#ioj-part-future').addClass('active');
+
+    $tooltipsHolder.find('[data-part="#ioj-part-future"]').find('.tooltip-icon').removeClass('tooltip-icon-inactive').addClass('active');
+    $tooltipsHolder.find('[data-part]:not([data-part="#ioj-part-future"])').find('.tooltip-icon').removeClass('active').addClass('tooltip-icon-inactive');
   });
   /* JOURNEY PARTS CLICKS */
   $journeyParts.on('click', function () {
