@@ -408,6 +408,7 @@
 @media (max-width: 767px) {
   .ioj-carousel-slide__content {
     height: 120vw;
+    min-height: 495px;
   }
 
   .ioj-nav > ul {
