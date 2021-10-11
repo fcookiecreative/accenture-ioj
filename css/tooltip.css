@@ -254,7 +254,7 @@
   text-align: center;
   top: 306px;
   left: 600px;
-  z-index: 7;
+  z-index: 99;
 }
 
 /* Person */
@@ -274,7 +274,7 @@
   text-align: center;
   top: 306px;
   right: 43px;
-  z-index: 6;
+  z-index: 99;
 }
 
 /* Star */

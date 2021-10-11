@@ -73,6 +73,30 @@
   background-position: bottom right;
 }
 
+.ioj-journey-slide__image-on,
+.ioj-journey-slide__image-off {
+  width: 100%;
+  position: absolute;
+  display: block;
+  transition: opacity 1s ease-out;
+}
+
+.ioj-journey-slide__image-on {
+  opacity: 0;
+}
+
+.ioj-journey-slide__image-off {
+  opacity: 1;
+}
+
+.ioj-journey-part.active .ioj-journey-slide__image-off {
+  opacity: 0;
+}
+
+.ioj-journey-part.active .ioj-journey-slide__image-on {
+  opacity: 1;
+}
+
 .ioj-carousel-slide--stable {
 
 }

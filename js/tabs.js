@@ -1,10 +1,10 @@
-jQuery(document).ready(function () {
+jQuery(function () {
   let isDesktop = window.matchMedia('(min-width: 1000px)').matches;
   const $carousel = jQuery('.ioj-carousel');
   const $mobileNavBar = jQuery('.ioj-nav--mobile');
   const $desktopNavBar = jQuery('.ioj-nav--desktop');
   const $journeyParts = jQuery('.ioj-journey-part');
-
+  const $tooltipsHolder = jQuery('.ioj-tooltips');
 
   /* RESIZE STUFF */
   jQuery(window).on('resize', function() {
@@ -24,6 +24,39 @@ jQuery(document).ready(function () {
       $desktopNavBar.find('.ioj-nav-link[data-target="' + currentTabTarget + '"]').trigger('click');
     }
   });
+  /* JOURNEY PARTS HOVER */
+  $journeyParts.on('mouseenter', function() {
+    const $activePart = jQuery(this);
+    const tooltipDataPart = '[data-part="#' + $activePart.attr('id') + '"]';
+    $carousel.find('.ioj-journey-part.active').removeClass('active');
+    $activePart.addClass('active');
+    // Tooltips Highlighting
+    $tooltipsHolder.find(tooltipDataPart).find('.tooltip-icon').removeClass('tooltip-icon-inactive').addClass('active');
+    $tooltipsHolder.find('[data-part]:not(' + tooltipDataPart + ')').find('.tooltip-icon').removeClass('active').addClass('tooltip-icon-inactive');
+    // Future 1st Bubbles Highlighting fix
+    if ($activePart.attr('id') !== 'ioj-part-future') {
+      jQuery('.future-bubble1-off').css({display: 'block'});
+    }
+  });
+  $journeyParts.on('mouseleave', function() {
+    $tooltipsHolder.find('.ioj-tooltip').find('.tooltip-icon').removeClass('tooltip-icon-inactive').addClass('active');
+    $journeyParts.addClass('active');
+    // Future 1st Bubbles Highlighting fix
+    jQuery('.future-bubble1-off').css({display: 'none'});
+  });
+  /*TOOLTIPS HOVER */
+  $tooltipsHolder.find('.ioj-tooltip').on('mouseenter', function() {
+    const $activeTooltip = jQuery(this);
+    const tooltipDataPart = '[data-part="' + $activeTooltip.data('part') + '"]';
+    $journeyParts.removeClass('active');
+
+    // duplicate code
+    $tooltipsHolder.find(tooltipDataPart).find('.tooltip-icon').removeClass('tooltip-icon-inactive').addClass('active');
+    $tooltipsHolder.find('[data-part]:not(' + tooltipDataPart + ')').find('.tooltip-icon').removeClass('active').addClass('tooltip-icon-inactive');
+
+
+    jQuery($activeTooltip.data('part')).addClass('active');
+  });
   /* JOURNEY PARTS CLICKS */
   $journeyParts.on('click', function () {
     const target = jQuery(this).data('target');
@@ -40,7 +73,7 @@ jQuery(document).ready(function () {
     currentNavClass = '.ioj-nav--mobile';
   }
 
-  $iojNavLinks.click(function () {
+  $iojNavLinks.on('click',function () {
     const $clickedLink = $(this);
     jQuery('.ioj-nav-link.active').removeClass('active');
     jQuery('.ioj-carousel-slide.active').fadeOut(300).removeClass('active');
@@ -54,14 +87,14 @@ jQuery(document).ready(function () {
   $firstSlideLink.trigger('click');
   /* ICON BUTTON CLICKS */
   /* reset */
-  $carousel.click(function (e) {
+  $carousel.on('click', function (e) {
     if (!jQuery(e.target).closest('.ioj-operations-image-block').length) {
       jQuery('.ioj-operations-image-block.active').removeClass('active').find('.ioj-operation-image-description').fadeOut(300);
     }
   });
 
   const $operationIconButtons = jQuery('.ioj-operations-image');
-  $operationIconButtons.click(function () {
+  $operationIconButtons.on('click', function () {
     const $currentIconButton = jQuery(this);
     const $currentIconButtonHolder = $currentIconButton.closest('.ioj-operations-image-block');
     const $activeButton = jQuery('.ioj-operations-image-block.active');
@@ -71,7 +104,7 @@ jQuery(document).ready(function () {
 
   /* More buttons */
   const $moreButtons = jQuery('.ioj-operations-more-link');
-  $moreButtons.click(function () {
+  $moreButtons.on('click', function () {
     const $currentButton = jQuery(this);
     const $currentButtonHolder = $currentButton.closest('.ioj-carousel-slide__content');
     $mobileNavBar.css({opacity: 0});
@@ -81,7 +114,7 @@ jQuery(document).ready(function () {
 
   /* Close buttons */
   const $closeButtons = jQuery('.ioj-operations-close-button');
-  $closeButtons.click(function () {
+  $closeButtons.on('click', function () {
     const $currentButton = jQuery(this);
     const $currentButtonHolder = $currentButton.closest('.ioj-carousel-slide__content');
     $mobileNavBar.css({opacity: 1});

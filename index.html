@@ -55,29 +55,22 @@
           <!-- First Slide -->
           <div class="ioj-carousel-slide ioj-journey ioj-carousel-slide--journey" id="ioj-tab-journey" role="tabpanel" aria-labelledby="ioj-link-journey">
             <!-- Stable Operations Image -->
-            <div class="ioj-journey-stable ioj-journey-part" data-target="#ioj-tab-stable">
+            <div id="ioj-part-stable" class="ioj-journey-stable ioj-journey-part active" data-target="#ioj-tab-stable">
               <img src="img/main_stable_off_v3.svg" alt="" class="ioj-journey-slide__image-off">
               <img src="img/main_stable_on.svg" alt="" class="ioj-journey-slide__image-on">
-
-              <!-- <div class="ioj-journey-slide__icon ioj-journey-slide__icon--dollar">
-                <img src="img/icons/Stable_Dollar_icon.svg" alt="">
-              </div>
-              <div class="ioj-journey-slide__icon ioj-journey-slide__icon--check">
-                <img src="img/icons/Stable_Check_icon.svg" alt="">
-              </div> -->
             </div>
             <!-- Efficient Operations Image -->
-            <div class="ioj-journey-efficient ioj-journey-part" data-target="#ioj-tab-efficient">
+            <div id="ioj-part-efficient" class="ioj-journey-efficient ioj-journey-part active" data-target="#ioj-tab-efficient">
               <img src="img/main_efficient_off_v3.svg" alt="Efficient Operations" class="ioj-journey-slide__image-off">
               <img src="img/main_efficient_on.svg" alt="Efficient Operations" class="ioj-journey-slide__image-on">
             </div>
             <!-- Predictive Operations Image -->
-            <div class="ioj-journey-predictive ioj-journey-part" data-target="#ioj-tab-predictive">
+            <div id="ioj-part-predictive" class="ioj-journey-predictive ioj-journey-part active" data-target="#ioj-tab-predictive">
               <img src="img/main_predictive_off2_v3.svg" alt="Predictive Operations" class="ioj-journey-slide__image-off">
               <img src="img/main_predictive_on_v2.svg" alt="Predictive Operations" class="ioj-journey-slide__image-on">
             </div>
             <!-- Future Ready Operations Image -->
-            <div class="ioj-journey-future ioj-journey-part" data-target="#ioj-tab-future">
+            <div id="ioj-part-future" class="ioj-journey-future ioj-journey-part active" data-target="#ioj-tab-future">
               <img src="img/main_future_off2_v3.svg" alt="Future Ready Operations" class="ioj-journey-slide__image-off">
               <img src="img/main_future_on_v4.svg" alt="Future Ready Operations" class="ioj-journey-slide__image-on">
             </div>
@@ -85,144 +78,133 @@
              <!-- Central Image -->
              <img class="ioj-journey-synops" src="img/synops_on_v2.svg" alt="Synops Hub" />
              <img class="ioj-journey-synops-label" src="img/synops_label_on_v2.svg" alt="Synops Hub" />
-             <!-- <div class="center-top center-show">Human + Machine Talent</div>
-             <div class="center-left center-show">Diverse Data</div>
-             <div class="center-right center-show">Work Orchestration</div>
-             <div class="center-bottom center-show">Insights + Intelligence</div> -->
              <div class="center-text center-show">
-              Accenture SynOps accelerates the journey to digital, data-driven, intelligent operations through Human+Machine Talent, Work Orchestration, Insights & Intelligence, and Diverse Data.
+               SynOps is a human + machine platform that connects intelligent technologies, talent and data and analytics to accelerate the move to intelligent operations.
                <a target="_blank" title="Learn more about Accenture SynOps" href="https://www.accenture.com/us-en/services/business-process-services/synops-operating-engine">LEARN MORE</a>
              </div>
 
-             <!-- Tooltips START -->
-            <div class="tooltip-block tooltip-dollar">
-              <div class="tooltip-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.63 23.55">
-                  <use href="defs.svg#ioj-tooltip-dollar-s"></use>
-                </svg>
+            <!-- Tooltips START -->
+            <div class="ioj-tooltips">
+              <div class="ioj-tooltip tooltip-block tooltip-dollar" data-part="#ioj-part-stable">
+                <div class="tooltip-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.63 23.55">
+                    <use href="defs.svg#ioj-tooltip-dollar-s"></use>
+                  </svg>
+                </div>
+                <div class="tooltip-text">
+                  <span>Cost Savings</span>
+                  Improve operational efficiencies with foundational tools and technologies
+                </div>
               </div>
-              <div class="tooltip-text">
-                <span>Cost Savings</span>
-                A brief description goes here and can be about ten to twelve words
+              <div class="ioj-tooltip tooltip-block tooltip-check" data-part="#ioj-part-stable">
+                <div class="tooltip-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.63 22.68">
+                    <use href="defs.svg#ioj-tooltip-check"></use>
+                  </svg>
+                </div>
+                <div class="tooltip-text">
+                  <span>Increased Compliance</span>
+                  Implement processes and tools to advance compliance but minimal adoption
+                </div>
               </div>
-            </div>
-            <div class="tooltip-block tooltip-check">
-              <div class="tooltip-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.63 22.68">
-                  <use href="defs.svg#ioj-tooltip-check"></use>
-                </svg>
+              <div class="ioj-tooltip tooltip-block tooltip-smiley" data-part="#ioj-part-efficient">
+                <div class="tooltip-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.23 24.17">
+                    <use href="defs.svg#ioj-tooltip-smiley"></use>
+                  </svg>
+                </div>
+                <div class="tooltip-text">
+                  <span>Customer Satisfaction Boost</span>
+                  Improve speed of product and service innovation with faster time to market
+                </div>
               </div>
-              <div class="tooltip-text">
-                <span>Increased Compliance</span>
-                A brief description goes here and can be about ten to twelve words
+              <div class="ioj-tooltip tooltip-block tooltip-badge" data-part="#ioj-part-efficient">
+                <div class="tooltip-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.66 24.99">
+                    <use href="defs.svg#ioj-tooltip-badge"></use>
+                  </svg>
+                </div>
+                <div class="tooltip-text">
+                  <span>Quality improvements</span>
+                  Adopt tools to automate processes and drive touchless transactions
+                </div>
               </div>
-            </div>
-            
-            <div class="tooltip-block tooltip-smiley">
-              <div class="tooltip-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.23 24.17">
-                  <use href="defs.svg#ioj-tooltip-smiley"></use>
-                </svg>
+              <div class="ioj-tooltip tooltip-block tooltip-gear" data-part="#ioj-part-efficient">
+                <div class="tooltip-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.75 22.75">
+                    <use href="defs.svg#ioj-tooltip-gear"></use>
+                  </svg>
+                </div>
+                <div class="tooltip-text">
+                  <span>Productivity & Efficiency Gains</span>
+                  Incorporate touchless processing with workflow capabilities to reduce cycle times
+                </div>
               </div>
-              <div class="tooltip-text">
-                <span>Customer Satisfaction Boost</span>
-                A brief description goes here and can be about ten to twelve words
+              <div class="ioj-tooltip tooltip-block tooltip-tag" data-part="#ioj-part-predictive">
+                <div class="tooltip-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.48 16.02">
+                    <use href="defs.svg#ioj-tooltip-tag"></use>
+                  </svg>
+                </div>
+                <div class="tooltip-text">
+                  <span>Procurement Spend Reduction</span>
+                  Provide readily accessible data and insights to make more informed decisions
+                </div>
               </div>
-            </div>
-
-            <div class="tooltip-block tooltip-badge">
-              <div class="tooltip-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.66 24.99">
-                  <use href="defs.svg#ioj-tooltip-badge"></use>
-                </svg>
+              <div class="ioj-tooltip tooltip-block tooltip-graph" data-part="#ioj-part-predictive">
+                <div class="tooltip-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.52 19.09">
+                    <use href="defs.svg#ioj-tooltip-graph"></use>
+                  </svg>
+                </div>
+                <div class="tooltip-text">
+                  <span>Reduced Inventory</span>
+                  Use technology to understand business demands and anticipate their needs
+                </div>
               </div>
-              <div class="tooltip-text">
-                <span>Quality improvements</span>
-                A brief description goes here and can be about ten to twelve words
+              <div class="ioj-tooltip tooltip-block tooltip-thumb" data-part="#ioj-part-predictive">
+                <div class="tooltip-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.44 22.56">
+                    <use href="defs.svg#ioj-tooltip-thumb"></use>
+                  </svg>
+                </div>
+                <div class="tooltip-text">
+                  <span>Stakeholder Experience Enhanced</span>
+                  Use predictive insights to improve both internal and external stakeholder experiences
+                </div>
               </div>
-            </div>
-            
-            <div class="tooltip-block tooltip-gear">
-              <div class="tooltip-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.75 22.75">
-                  <use href="defs.svg#ioj-tooltip-gear"></use>
-                </svg>
+              <div class="ioj-tooltip tooltip-block tooltip-thumb-future" data-part="#ioj-part-future">
+                <div class="tooltip-icon tooltip-icon-large">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.66 28.08">
+                    <use href="defs.svg#ioj-tooltip-future"></use>
+                  </svg>
+                </div>
+                <div class="tooltip-text">
+                  <span>Highest Employee Satisfaction</span>
+                  Inspire the workforce by giving them the tools, skills and confidence
+                </div>
               </div>
-              <div class="tooltip-text">
-                <span>Productivity & Efficiency Gains</span>
-                A brief description goes here and can be about ten to twelve words
+              <div class="ioj-tooltip tooltip-block tooltip-person" data-part="#ioj-part-future">
+                <div class="tooltip-icon tooltip-icon-large">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.54 33.76">
+                    <use href="defs.svg#ioj-tooltip-person"></use>
+                  </svg>
+                </div>
+                <div class="tooltip-text">
+                  <span>1st Quartile Customer Experience</span>
+                  Provide engaging and seamless experiences for all internal and external stakeholders
+                </div>
               </div>
-            </div>
-
-            <div class="tooltip-block tooltip-tag">
-              <div class="tooltip-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.48 16.02">
-                  <use href="defs.svg#ioj-tooltip-tag"></use>
-                </svg>
-              </div>
-              <div class="tooltip-text">
-                <span>Procurement Spend Reduction</span>
-                A brief description goes here and can be about ten to twelve words
-              </div>
-            </div>
-
-            <div class="tooltip-block tooltip-graph">
-              <div class="tooltip-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.52 19.09">
-                  <use href="defs.svg#ioj-tooltip-graph"></use>
-                </svg>
-              </div>
-              <div class="tooltip-text">
-                <span>Reduced Inventory</span>
-                A brief description goes here and can be about ten to twelve words
-              </div>
-            </div>
-
-            <div class="tooltip-block tooltip-thumb">
-              <div class="tooltip-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.44 22.56">
-                  <use href="defs.svg#ioj-tooltip-thumb"></use>
-                </svg>
-              </div>
-              <div class="tooltip-text">
-                <span>Stakeholder Experience Enhanced</span>
-                A brief description goes here and can be about ten to twelve words
-              </div>
-            </div>
-
-            <div class="tooltip-block tooltip-thumb-future">
-              <div class="tooltip-icon tooltip-icon-large">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.66 28.08">
-                  <use href="defs.svg#ioj-tooltip-future"></use>
-                </svg>
-              </div>
-              <div class="tooltip-text">
-                <span>Highest Employee Satisfaction</span>
-                A brief description goes here and can be about ten to twelve words
-              </div>
-            </div>
-
-            <div class="tooltip-block tooltip-person">
-              <div class="tooltip-icon tooltip-icon-large">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.54 33.76">
-                  <use href="defs.svg#ioj-tooltip-person"></use>
-                </svg>
-              </div>
-              <div class="tooltip-text">
-                <span>1st Quartile Customer Experience</span>
-                A brief description goes here and can be about ten to twelve words
-              </div>
-            </div>
-
-            <div class="tooltip-block tooltip-star">
-              <div class="tooltip-icon tooltip-icon-large">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.89 32.28">
-                  <use href="defs.svg#ioj-tooltip-star"></use>
-                </svg>
-              </div>
-              <div class="tooltip-text">
-                <span>Enhanced Stakeholder Outcomes</span>
-                A brief description goes here and can be about ten to twelve words
+              <div class="ioj-tooltip tooltip-block tooltip-star" data-part="#ioj-part-future">
+                <div class="tooltip-icon tooltip-icon-large">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.89 32.28">
+                    <use href="defs.svg#ioj-tooltip-star"></use>
+                  </svg>
+                </div>
+                <div class="tooltip-text">
+                  <span>Enhanced Stakeholder Outcomes</span>
+                  Use diverse skillsets and data for new opportunities to transform business outcomes
+                </div>
               </div>
             </div>
 
@@ -232,7 +214,7 @@
               <img src="./img/futureready_page_bubble1.svg" alt="Process Efficiency Gains" />
             </div>
 
-            <div class="future-bubble1-off" tabindex="0" style="display: none;">
+            <div class="future-bubble1-off" tabindex="0">
               <img src="./img/futureready_page_bubble1_off.svg" alt="" />
             </div>
 
@@ -532,6 +514,5 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
   <script src="js/tabs.js"></script>
-  <script src="js/back-more-mobile.js"></script>
 </body>
 </html>

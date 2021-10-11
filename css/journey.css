@@ -1,11 +1,3 @@
-.hovered .ioj-journey-slide__image-off {
-  opacity: 1;
-}
-
-.hovered .ioj-journey-slide__image-on {
-  opacity: 0;
-}
-
 .future-hover1,
 .future-bubble1 {
   z-index: 7;
@@ -17,6 +9,7 @@
 }
 
 .future-bubble1-off {
+  display: none;
   z-index: 7;
   position: absolute;
   top: 423px;
@@ -86,14 +79,6 @@
   left: 757px;
   width: 130px;
   height: 130px;
-}
-
-.ioj-journey-slide__image-on,
-.ioj-journey-slide__image-off {
-  width: 100%;
-  position: absolute;
-  display: block;
-  transition: opacity 1s ease-out;
 }
 
 @media (min-width: 1000px) {
