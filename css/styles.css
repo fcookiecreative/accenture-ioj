@@ -416,6 +416,7 @@ strong {
 
 .tooltip-block .tooltip-text span{
   display: block;
+  font-weight: 600;
   color: #7500C0;
 }
 
