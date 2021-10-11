@@ -6,51 +6,26 @@ const centerTextAlt = document.querySelectorAll('.center-show');
 const len = centerText !== null ? centerText.length : 0;
 
 const showCenterText = () => {
-    for(var i=0; i < len; i++) {
-        centerText[i].classList.add('show');
-    }
+  for (var i=0; i < len; i++) {
+    centerText[i].classList.add('show');
+  }
 }
 
-const hideCenterText = () => {
-    [...centerText].map(x => x.classList.remove('show'));
-}
+const hideCenterText = () => { [...centerText].map(x => x.classList.remove('show')); }
 
-centerTop.addEventListener('mouseenter', () => {
-    showCenterText();
-});
-
-centerTop.addEventListener('mouseleave', () => {
-    hideCenterText();
-});
-
-centerBottom.addEventListener('mouseenter', () => {
-    showCenterText();
-});
-
-centerBottom.addEventListener('mouseleave', () => {
-    hideCenterText();
-});
-
-
+centerTop.addEventListener('mouseenter', () => { showCenterText(); });
+centerTop.addEventListener('mouseleave', () => { hideCenterText(); });
+centerBottom.addEventListener('mouseenter', () => { showCenterText(); });
+centerBottom.addEventListener('mouseleave', () => { hideCenterText(); });
 
 centerTextAlt.forEach(item => {
-    item.addEventListener('mouseenter', event => {
-        showCenterText();
-    });
-
-    item.addEventListener('mouseleave', event => {
-        showCenterText();
-    });
+  item.addEventListener('mouseenter', () => { showCenterText(); });
+  item.addEventListener('mouseleave', () => { showCenterText(); });
 });
 
-centerTextItem.addEventListener('mouseenter', () => {
-    showCenterText();
-});
-
-centerTextItem.addEventListener('mouseleave', () => {
-    hideCenterText();
-});
-
+centerTextItem.addEventListener('mouseenter', () => { showCenterText(); });
+centerTextItem.addEventListener('mouseleave', () => { hideCenterText(); });
+/* jQuery code */
 jQuery(function () {
   let isDesktop = window.matchMedia('(min-width: 1000px)').matches;
   const $carousel = jQuery('.ioj-carousel');
