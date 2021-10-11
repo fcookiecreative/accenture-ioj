@@ -346,14 +346,12 @@
     color: #fff;
   }
 
-  .ioj-operations-more-link:after {
-    position: absolute;
-    right: -25px;
-    display: block;
+  .ioj-operations-more-link__arrow {
+    display: inline-block;
     width: 20px;
     height: 20px;
+    margin-left: 6px;
     background-image: url('../img/icons/Arrow_Operations.svg');
-    content: '';
   }
   
   .ioj-operations-details {
@@ -459,6 +457,10 @@
     line-height: 17px;
   }
 
+  .ioj-operations-description {
+    max-width: 100%;
+  }
+
   .ioj-carousel-slide__content.active .ioj-operations-title {
     top: -35px;
   }
@@ -496,7 +498,6 @@
   .ioj-operations-description {
     font-size: 14px;
     line-height: 22px;
-    max-width: 100%;
   }
 
   .ioj-operations-more-link {
